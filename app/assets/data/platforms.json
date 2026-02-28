@@ -1,0 +1,30 @@
+{"platforms":[
+    {
+        "_id":"1",
+        "name": "Nintendo",
+        "value": "nes",
+        "image_url":"/images/nes.png",
+        "banner_url":""
+    },
+    {
+        "_id":"2",
+        "name": "Gameboy",
+        "value": "gb",
+        "image_url":"/images/gameboy.png",
+        "banner_url":""
+    },
+    {
+        "_id":"3",
+        "name": "Gameboy Advance",
+        "value": "gba",
+        "image_url":"/images/gba.png",
+        "banner_url":""
+    },
+    {
+        "_id":"4",
+        "name": "Sega Genesis",
+        "value": "segaMD",
+        "image_url":"/images/sega.png",
+        "banner_url":""
+    }
+]}

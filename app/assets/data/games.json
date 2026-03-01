@@ -16,7 +16,37 @@
             "summary": "The first Castlevania game for the Game Boy, following Christopher Belmont as he battles through four grueling stages to defeat the immortal Count Dracula. Armed with only his whip and a handful of sub-weapons, Christopher must navigate treacherous platforming sections filled with classic Castlevania enemies. Despite its technical limitations on the handheld hardware, the game successfully captures the gothic atmosphere and punishing difficulty that defines the series.",
             "additional_summary": "A stripped-down but atmospheric entry in the Castlevania series, featuring the iconic whip-based combat and gothic environments. The game is known for its slow pace compared to nes entries.",
             "trivia": "Christopher Belmont is Simon Belmont's ancestor, set 100 years before the original Castlevania. The game was criticized for its sluggish movement speed.",
-            "path": "/roms/gb/castlevania_the_adventure.gb"
+            "path": "/roms/gb/castlevania_the_adventure.gb",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Crouch",
+                    "keys": "Arrow Down"
+                },
+                {
+                    "type": "Jump",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Whip Attack",
+                    "keys": "X"
+                },
+                {
+                    "type": "Use Subweapon",
+                    "keys": "Arrow Up + X"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select Subweapon",
+                    "keys": "Shift"
+                }
+            ]
         },
         {
             "_id": "f4b2e9c1-73d8-4a56-b0e3-8c1f9d2a7e45",
@@ -34,7 +64,49 @@
             "summary": "A faithful and feature-rich port of the legendary Super Nintendo launch title Super Mario World, Super Mario Advance 2 brings the entire Dinosaur Land adventure to the Game Boy Advance with Mario and Luigi both fully playable for the first time in the classic game. Players traverse nine sprawling worlds packed with 96 exits to discover, rideable Yoshis of multiple colors with distinct abilities, and an enormous variety of stage types ranging from ghost houses and castles to underwater caverns and sky fortresses. The GBA version adds voiced character exclamations, a Luigi mode with altered physics, and the ability to save progress at any point — making it the definitive portable version of one of the greatest platformers ever created.",
             "additional_summary": "Super Mario World is widely considered the peak of 2D Mario game design, and this GBA port preserves everything that made it a masterpiece while adding quality-of-life improvements and a fully playable Luigi with his floatier, higher-jumping moveset.",
             "trivia": "Super Mario World was the best-selling SNES game of all time, shipping over 20 million copies. Yoshi, who debuted in this game, was originally conceived during development of the original Super Mario Bros. but was cut due to hardware limitations.",
-            "path": "/roms/gba/super_mario_world.gba"
+            "path": "/roms/gba/super_mario_world.gba",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Crouch / Enter Pipe",
+                    "keys": "Arrow Down"
+                },
+                {
+                    "type": "Look Up",
+                    "keys": "Arrow Up"
+                },
+                {
+                    "type": "Jump / Fly (Cape / Tanooki)",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Run / Spin Attack / Carry",
+                    "keys": "X"
+                },
+                {
+                    "type": "Mount / Dismount Yoshi",
+                    "keys": "Z (near Yoshi)"
+                },
+                {
+                    "type": "L — Scroll Screen Left",
+                    "keys": "A"
+                },
+                {
+                    "type": "R — Scroll Screen Right",
+                    "keys": "S"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select",
+                    "keys": "Shift"
+                }
+            ]
         },
         {
             "_id": "104",
@@ -52,24 +124,89 @@
             "summary": "Kirby returns to the Game Boy in a greatly expanded sequel, teaming up with three lovable animal friends — Rick the Hamster, Kine the Fish, and Coo the Owl — to recover the Rainbow Bridges stolen by the shadowy villain Dark Matter. Each animal companion fundamentally changes how Kirby's copy abilities work, adding immense depth and variety to the gameplay across seven colorful worlds. The game introduced one of Kirby's most iconic recurring antagonists and set the template for future entries in the series.",
             "additional_summary": "A major step up from the original Dream Land, this sequel introduced Kirby's signature copy abilities to the Game Boy along with animal companions that change how each ability works.",
             "trivia": "This was the first Game Boy Kirby game to include copy abilities. Dark Matter, who debuted here, went on to become a recurring villain in the Kirby series.",
-            "path": "/roms/gb/kirdby_dream_land_2.gb"
-        },{
+            "path": "/roms/gb/kirdby_dream_land_2.gb",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Fly / Swim Up",
+                    "keys": "Arrow Up"
+                },
+                {
+                    "type": "Crouch / Slide",
+                    "keys": "Arrow Down"
+                },
+                {
+                    "type": "Inhale / Spit Star",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Jump / Fly",
+                    "keys": "X"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select",
+                    "keys": "Shift"
+                }
+            ]
+        },
+        {
             "_id": "a1b2c3d4e5f6a7b8c9d0e1f2",
             "name": "Doom",
             "year": 2001,
             "date_of_release": "2001-10-26",
             "cover_url": "/images/game_covers/doom.jpeg",
             "summary": "Doom for the Game Boy Advance is a port of id Software's legendary 1993 first-person shooter, bringing the iconic demon-blasting action to Nintendo's 32-bit handheld. Players take on the role of a space marine fighting through 24 maze-like levels across the Martian moon base, battling hellspawn with an arsenal of chainguns, plasma rifles, and rocket launchers.",
-            "additional_summary": "The port is based on the Atari Jaguar version of Doom, sharing its simplified map geometry and reduced monster roster — notably absent are the Cyberdemon and Spider Mastermind. The game was censored to obtain a Teen rating from the ESRB, replacing red blood with green. It uniquely includes eight exclusive deathmatch-only levels not found on any other platform, playable via the Game Link Cable with up to four players. A 'static lighting' option was added to boost performance on the GBA's dim first-generation screen.",
+            "additional_summary": "The port is based on the Atari Jaguar version of Doom, sharing its simplified map geometry and reduced monster roster — notably absent are the Cyberdemon and Spider Mastermind. The game was censored to obtain a Teen rating from the ESRB, replacing red blood with green. It uniquely includes eight exclusive deathmatch-only levels not found on any other platform, playable via the Game Link Cable with up to four players. A static lighting option was added to boost performance on the GBA dim first-generation screen.",
             "developer": "David A. Palmer Productions",
             "genre": [
                 "First-Person Shooter",
                 "Action"
             ],
-            "trivia": "Doom on GBA was the first portable console port of the game and remains the only official release of Doom to include exclusive multiplayer-only deathmatch levels. The game's soundtrack, handled by audio director Allister Brimble, suffered from known synchronization issues caused by a code error during the transfer from the Jaguar codebase. Speedrunners discovered an out-of-bounds glitch in late 2017 that allows the entire game to be completed in under 10 minutes.",
+            "trivia": "Doom on GBA was the first portable console port of the game and remains the only official release of Doom to include exclusive multiplayer-only deathmatch levels. The game soundtrack, handled by audio director Allister Brimble, suffered from known synchronization issues caused by a code error during the transfer from the Jaguar codebase. Speedrunners discovered an out-of-bounds glitch in late 2017 that allows the entire game to be completed in under 10 minutes.",
             "path": "/roms/gba/doom.gba",
             "platform": "gba",
-            "platform_name": "Game Boy Advance"
+            "platform_name": "Game Boy Advance",
+            "movement": [
+                {
+                    "type": "Move Forward / Backward",
+                    "keys": "Arrow Up / Down"
+                },
+                {
+                    "type": "Turn Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Fire Weapon",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Open Door / Use Switch",
+                    "keys": "X"
+                },
+                {
+                    "type": "Strafe Left",
+                    "keys": "A"
+                },
+                {
+                    "type": "Strafe Right",
+                    "keys": "S"
+                },
+                {
+                    "type": "Next Weapon",
+                    "keys": "Shift"
+                },
+                {
+                    "type": "Start / Pause / Automap",
+                    "keys": "Enter"
+                }
+            ]
         },
         {
             "_id": "105",
@@ -87,7 +224,29 @@
             "summary": "After a violent storm shipwrecks him on the mysterious Koholint Island, Link must collect eight magical Instruments of the Sirens hidden across sprawling dungeons in order to wake the sleeping Wind Fish and find his way back home. The game features a surprisingly emotional and philosophical narrative, inventive dungeon design, and unexpected cameos from the Mario universe that delighted players worldwide. Widely regarded as one of the greatest handheld games ever made, it was later lovingly remade for the Nintendo Switch in 2019.",
             "additional_summary": "One of the most beloved Zelda games ever made, Link's Awakening features a deeply emotional story, clever dungeons, and surprising cameos from Mario characters. It was later remade for Nintendo Switch in 2019.",
             "trivia": "Link's Awakening was originally developed as an unofficial side project by Nintendo staff. It was the first Zelda game not set in Hyrule and not featuring Princess Zelda as a character.",
-            "path": "/roms/gb/legend_of_zelda_links_awakening.gb"
+            "path": "/roms/gb/legend_of_zelda_links_awakening.gb",
+            "movement": [
+                {
+                    "type": "Move",
+                    "keys": "Arrow Keys"
+                },
+                {
+                    "type": "Use Item A (Sword)",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Use Item B",
+                    "keys": "X"
+                },
+                {
+                    "type": "Start / Open Menu",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select / Map",
+                    "keys": "Shift"
+                }
+            ]
         },
         {
             "_id": "107",
@@ -105,7 +264,33 @@
             "summary": "In the fifth and final Game Boy Mega Man adventure, the Blue Bomber faces an entirely new threat — the Stardroids, a group of powerful alien robots themed after the planets of the solar system who have arrived to conquer Earth. Mega Man is equipped with a brand new Mega Arm weapon that replaces the classic Mega Buster, adding a punch-and-grab mechanic that can be powered up throughout the game. Featuring fully original bosses, a unique upgrade system, and tight gameplay, it is universally considered the pinnacle of the Game Boy Mega Man series.",
             "additional_summary": "Unlike the other Game Boy Mega Man titles which reused bosses from the nes games, Mega Man V features entirely original bosses themed around planets in the solar system. It is widely considered the best Game Boy Mega Man entry.",
             "trivia": "Mega Man V is the rarest and most expensive of the Game Boy Mega Man games. The Mega Arm replaces the Mega Buster and can be powered up over time.",
-            "path": "/roms/gb/mega_man_v.gb"
+            "path": "/roms/gb/mega_man_v.gb",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Climb Ladder Up / Down",
+                    "keys": "Arrow Up / Down"
+                },
+                {
+                    "type": "Jump",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Mega Arm Fire / Charge",
+                    "keys": "X"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select Weapon",
+                    "keys": "Shift"
+                }
+            ]
         },
         {
             "_id": "109",
@@ -123,11 +308,41 @@
             "summary": "Intergalactic bounty hunter Samus Aran is dispatched on a solo mission to the remote Metroid homeworld of SR388, tasked with hunting down and eliminating the remaining Metroid population before they can be weaponized by the Space Pirates. The game introduces multiple evolved forms of the Metroid creature and expands Samus's arsenal significantly, rewarding exploration across a sprawling underground world. Despite the Game Boy's monochrome display, the game creates a uniquely isolated and atmospheric experience that laid crucial groundwork for the entire Metroid franchise.",
             "additional_summary": "A landmark game in the Metroidvania genre, Metroid II expands Samus's abilities and introduces multiple Metroid evolution forms. The game has a haunting atmosphere despite the Game Boy's monochrome display.",
             "trivia": "Metroid II was remade as Metroid: Samus Returns for the 3DS in 2017. The baby Metroid that hatches at the end of this game is the same one that appears in Super Metroid.",
-            "path": "/roms/gb/metroid_ll.gb"
+            "path": "/roms/gb/metroid_ii.gb",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Aim Up",
+                    "keys": "Arrow Up"
+                },
+                {
+                    "type": "Morph Ball / Crouch",
+                    "keys": "Arrow Down"
+                },
+                {
+                    "type": "Jump",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Fire / Beam",
+                    "keys": "X"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select Weapon",
+                    "keys": "Shift"
+                }
+            ]
         },
         {
             "_id": "112",
-            "name": "Pokémon Red Version",
+            "name": "Pokemon Red Version",
             "cover_url": "/images/game_covers/pokemon_red_version.jpeg",
             "platform": "gb",
             "platform_name": "Game Boy",
@@ -138,10 +353,32 @@
                 "RPG",
                 "Monster Catching"
             ],
-            "summary": "The game that sparked a worldwide phenomenon, Pokémon Red invites players to embark on a coming-of-age journey across the Kanto region as a young Trainer aiming to catch all 151 Pokémon, defeat eight gym leaders, and ultimately claim the title of Pokémon Champion. Beneath its simple and charming premise lies a surprisingly deep battle system, a rich world full of secrets, and a revolutionary link cable trading and battling feature that made it one of the most social gaming experiences of its era. Its lasting cultural impact is immeasurable, spawning an entertainment franchise that remains the highest-grossing media franchise in history.",
-            "additional_summary": "The game that started a global phenomenon. Pokémon Red and Blue introduced 151 Pokémon, turn-based battles, and a link cable trading/battling system. Its simple premise masked remarkable depth.",
-            "trivia": "Pokémon Red and Green were the original Japanese releases; Blue was a special edition. The Western Red and Blue are based on the updated Japanese Blue version. MissingNo is one of gaming's most famous glitches.",
-            "path": "/roms/gb/pokemon_red.gb"
+            "summary": "The game that sparked a worldwide phenomenon, Pokemon Red invites players to embark on a coming-of-age journey across the Kanto region as a young Trainer aiming to catch all 151 Pokemon, defeat eight gym leaders, and ultimately claim the title of Pokemon Champion. Beneath its simple and charming premise lies a surprisingly deep battle system, a rich world full of secrets, and a revolutionary link cable trading and battling feature that made it one of the most social gaming experiences of its era.",
+            "additional_summary": "The game that started a global phenomenon. Pokemon Red and Blue introduced 151 Pokemon, turn-based battles, and a link cable trading/battling system.",
+            "trivia": "Pokemon Red and Green were the original Japanese releases; Blue was a special edition.",
+            "path": "/roms/gb/pokemon_red.gb",
+            "movement": [
+                {
+                    "type": "Navigate / Move",
+                    "keys": "Arrow Keys"
+                },
+                {
+                    "type": "Confirm / Interact / Battle Action",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Cancel / Back",
+                    "keys": "X"
+                },
+                {
+                    "type": "Start / Open Menu",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select / Pokédex",
+                    "keys": "Shift"
+                }
+            ]
         },
         {
             "_id": "115",
@@ -156,10 +393,36 @@
                 "Platformer",
                 "Action"
             ],
-            "summary": "In this bold spin-off from the Super Mario Land series, the greedy antihero Wario stars in his very own adventure, storming through the pirate-infested Kitchen Island to steal the legendary Mamu statue and amass enough treasure to buy a castle grander than Mario's. Unlike traditional platformers, the game revolves around wealth accumulation rather than rescuing a princess, with multiple endings determined by how much gold Wario collects across its 40 levels. The game was a massive commercial and critical success that established Wario as a beloved standalone character and launched an entire franchise of his own.",
-            "additional_summary": "The game that established Wario as a standalone character, shifting focus from saving a princess to accumulating wealth. Features multiple endings based on how much treasure Wario collects.",
-            "trivia": "This was the first game where Wario was a playable protagonist rather than a villain. The game's success led to an entire Wario Land series spanning multiple Nintendo platforms.",
-            "path": "/roms/gb/wario_land_super_mario_3.gb"
+            "summary": "In this bold spin-off from the Super Mario Land series, the greedy antihero Wario stars in his very own adventure, storming through the pirate-infested Kitchen Island to steal the legendary Mamu statue and amass enough treasure to buy a castle grander than Mario's.",
+            "additional_summary": "The game that established Wario as a standalone character, shifting focus from saving a princess to accumulating wealth.",
+            "trivia": "This was the first game where Wario was a playable protagonist rather than a villain.",
+            "path": "/roms/gb/wario_land_super_mario_3.gb",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Crouch / Pick Up Item",
+                    "keys": "Arrow Down"
+                },
+                {
+                    "type": "Jump / Butt Stomp",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Dash / Shoulder Charge",
+                    "keys": "X"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select",
+                    "keys": "Shift"
+                }
+            ]
         },
         {
             "_id": "201",
@@ -174,10 +437,36 @@
                 "Beat 'em Up",
                 "Action"
             ],
-            "summary": "An epic crossover brawler that brings together the hard-hitting Battletoads — Rash, Zitz, and Pimple — with the legendary martial arts duo Billy and Jimmy Lee from Double Dragon to face the combined threat of the Dark Queen and the Shadow Boss. Players battle through waves of enemies across diverse stages ranging from city streets to outer space, using a wide variety of brutal combo attacks and special moves unique to each character. The game is a love letter to fans of both franchises and remains one of the most fondly remembered beat 'em ups on the nes.",
-            "additional_summary": "Features both solo and co-op multiplayer for up to two players simultaneously, with each character offering a distinct playstyle and moveset that rewards experimentation.",
-            "trivia": "The crossover was initiated by Tradewest, who owned the rights to both franchises at the time. It was one of the last major nes releases before the SNES fully took over.",
-            "path": "/roms/nes/battle_toads_double_dragon.nes"
+            "summary": "An epic crossover brawler that brings together the hard-hitting Battletoads with the legendary martial arts duo Billy and Jimmy Lee from Double Dragon to face the combined threat of the Dark Queen and the Shadow Boss.",
+            "additional_summary": "Features both solo and co-op multiplayer for up to two players simultaneously.",
+            "trivia": "The crossover was initiated by Tradewest, who owned the rights to both franchises at the time.",
+            "path": "/roms/nes/battle_toads_double_dragon.nes",
+            "movement": [
+                {
+                    "type": "Move",
+                    "keys": "Arrow Keys"
+                },
+                {
+                    "type": "Jump",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Attack / Combo",
+                    "keys": "X"
+                },
+                {
+                    "type": "Special Move",
+                    "keys": "Z + X"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select",
+                    "keys": "Shift"
+                }
+            ]
         },
         {
             "_id": "202",
@@ -192,28 +481,40 @@
                 "Action",
                 "Platformer"
             ],
-            "summary": "The legendary gothic action-platformer that launched one of gaming's most iconic franchises, placing players in the boots of vampire hunter Simon Belmont as he whips his way through six haunting stages of Dracula's ominous castle. Armed with his ancestral Vampire Killer whip and a selection of sub-weapons including holy water, axes, and the legendary cross, Simon must battle iconic monsters drawn from classic horror mythology before confronting Count Dracula himself. Its atmospheric music, tight controls, and punishing yet fair difficulty set a gold standard for action games on the nes.",
-            "additional_summary": "The game's iconic soundtrack composed by Kinuyo Yamashita is widely regarded as some of the greatest video game music ever composed, with tracks like Vampire Killer becoming legendary in gaming culture.",
-            "trivia": "Castlevania was originally released in Japan as Akumajō Dracula, meaning 'Demon Castle Dracula'. Simon Belmont's design was inspired by Indiana Jones.",
-            "path": "/roms/nes/castlevania.nes"
-        },
-        {
-            "_id": "203",
-            "name": "Metroid",
-            "cover_url": "/images/game_covers/metroid.jpeg",
-            "platform": "nes",
-            "platform_name": "Nintendo Entertainment System",
-            "year": 2004,
-            "date_of_release": "June 14, 2004",
-            "developer": "Nintendo R&D1",
-            "genre": [
-                "Action",
-                "Metroidvania"
-            ],
-            "summary": "The Game Boy Advance port of the groundbreaking nes original, Metroid puts players in the iconic Power Suit of intergalactic bounty hunter Samus Aran as she explores the vast, labyrinthine cave systems of the planet Zebes to destroy the Space Pirate base and eradicate the parasitic Metroid organisms. The game pioneered the non-linear exploration genre that would bear its name, rewarding players who methodically backtrack with new power-ups like the Morph Ball, Ice Beam, and Space Jump that open up previously inaccessible areas. This GBA version, part of the Classic nes Series, faithfully preserves the original experience for a new generation of players.",
-            "additional_summary": "The GBA release is part of Nintendo's Classic nes Series collection and is a near-perfect port of the 1986 original, including the famous secret that reveals Samus to be a woman upon fast completion.",
-            "trivia": "Samus Aran was one of gaming's first female protagonists, though her gender was kept secret until the game's ending. The original was co-developed by Intelligent Systems.",
-            "path": "/roms/nes/metroid.nes"
+            "summary": "The legendary gothic action-platformer that launched one of gaming's most iconic franchises, placing players in the boots of vampire hunter Simon Belmont as he whips his way through six haunting stages of Dracula's ominous castle.",
+            "additional_summary": "The game's iconic soundtrack composed by Kinuyo Yamashita is widely regarded as some of the greatest video game music ever composed.",
+            "trivia": "Castlevania was originally released in Japan as Akumajo Dracula. Simon Belmont's design was inspired by Indiana Jones.",
+            "path": "/roms/nes/castlevania.nes",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Crouch",
+                    "keys": "Arrow Down"
+                },
+                {
+                    "type": "Jump",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Whip Attack",
+                    "keys": "X"
+                },
+                {
+                    "type": "Use Subweapon",
+                    "keys": "Arrow Up + X"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select Subweapon",
+                    "keys": "Shift"
+                }
+            ]
         },
         {
             "_id": "204",
@@ -228,10 +529,40 @@
                 "Run and Gun",
                 "Action"
             ],
-            "summary": "One of the defining games of the nes era, Contra is a ferocious run-and-gun action game following elite commandos Bill Rizer and Lance Bean as they blast through jungles, bases, and alien strongholds to defeat the evil Red Falcon organization threatening mankind. The game is celebrated for its blistering pace, iconic power-up weapons like the Spread Gun and Laser, and its legendary two-player co-op mode that made it a must-play at every sleepover. Its brutal difficulty was somewhat tamed by the famous Konami Code — Up, Up, Down, Down, Left, Right, Left, Right, B, A — which granted 30 lives and became one of gaming's most enduring secrets.",
-            "additional_summary": "The Konami Code, first popularized by Contra, has since appeared in dozens of games and cultural references and remains one of the most recognized cheat codes in gaming history.",
-            "trivia": "The main characters Bill and Lance were visually inspired by Arnold Schwarzenegger and Sylvester Stallone. The game was loosely inspired by the movies Aliens and Predator.",
-            "path": "/roms/nes/contra.nes"
+            "summary": "One of the defining games of the nes era, Contra is a ferocious run-and-gun action game following elite commandos Bill Rizer and Lance Bean as they blast through jungles, bases, and alien strongholds.",
+            "additional_summary": "The Konami Code, first popularized by Contra, has since appeared in dozens of games and cultural references.",
+            "trivia": "The main characters Bill and Lance were visually inspired by Arnold Schwarzenegger and Sylvester Stallone.",
+            "path": "/roms/nes/contra.nes",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Aim Up / Climb",
+                    "keys": "Arrow Up"
+                },
+                {
+                    "type": "Prone / Aim Down",
+                    "keys": "Arrow Down"
+                },
+                {
+                    "type": "Jump",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Fire",
+                    "keys": "X"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select",
+                    "keys": "Shift"
+                }
+            ]
         },
         {
             "_id": "205",
@@ -246,10 +577,40 @@
                 "Platformer",
                 "Action"
             ],
-            "summary": "Based on the beloved Disney animated series, DuckTales follows the world's richest duck Scrooge McDuck as he bounces his iconic cane across five exotic locations — the Amazon, Transylvania, African Mines, the Himalayas, and the Moon — in search of five legendary treasures to add to his vast fortune. Developed by Capcom at the height of their Disney partnership, the game is praised for its tight pogo-stick cane mechanic, non-linear stage selection, and exceptional soundtrack that became iconic in its own right. Its charm, polish, and replayability made it one of the most beloved licensed games ever created.",
-            "additional_summary": "The game was remastered in 2013 by WayForward Technologies as DuckTales: Remastered, featuring fully voiced cutscenes with the original cartoon cast and updated visuals.",
-            "trivia": "The Moon stage theme, composed by Hiroshige Tezuka, is widely considered one of the greatest video game music tracks ever written and has been covered and remixed thousands of times.",
-            "path": "/roms/nes/ducktales.nes"
+            "summary": "Based on the beloved Disney animated series, DuckTales follows the world's richest duck Scrooge McDuck as he bounces his iconic cane across five exotic locations in search of five legendary treasures.",
+            "additional_summary": "The game was remastered in 2013 by WayForward Technologies as DuckTales: Remastered.",
+            "trivia": "The Moon stage theme, composed by Hiroshige Tezuka, is widely considered one of the greatest video game music tracks ever written.",
+            "path": "/roms/nes/ducktales.nes",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Look Up / Enter Door",
+                    "keys": "Arrow Up"
+                },
+                {
+                    "type": "Crouch / Pogo Stance",
+                    "keys": "Arrow Down"
+                },
+                {
+                    "type": "Jump",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Cane Swing / Pogo Activate",
+                    "keys": "X"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select Stage",
+                    "keys": "Shift"
+                }
+            ]
         },
         {
             "_id": "206",
@@ -264,10 +625,36 @@
                 "Platformer",
                 "Action"
             ],
-            "summary": "One of the most technically impressive nes games ever made, Kirby's Adventure introduced the pink puffball's iconic copy ability mechanic, allowing Kirby to inhale enemies and steal their powers across seven colorful worlds in Dream Land. The game's vibrant visuals, smooth animation, and sheer variety of gameplay pushed the aging nes hardware far beyond what most thought possible, with effects like Mode 7-style scaling that seemed impossible on the console. Behind its cheerful exterior lies a surprisingly deep and emotional story involving King Dedede, the mysterious Dream Spring, and the dark entity Nightmare.",
-            "additional_summary": "Kirby's Adventure was one of the last major first-party nes releases and featured a battery-backed save system, which was rare for nes action-platformers at the time.",
-            "trivia": "The game was later remade as Kirby: Nightmare in Dream Land for the Game Boy Advance in 2002. It was among the final nes titles developed by Nintendo before the SNES era.",
-            "path": "/roms/nes/kirby's_adventure.nes"
+            "summary": "One of the most technically impressive nes games ever made, Kirby's Adventure introduced the pink puffball's iconic copy ability mechanic across seven colorful worlds in Dream Land.",
+            "additional_summary": "Kirby's Adventure was one of the last major first-party nes releases and featured a battery-backed save system.",
+            "trivia": "The game was later remade as Kirby: Nightmare in Dream Land for the Game Boy Advance in 2002.",
+            "path": "/roms/nes/kirbys_adventure.nes",
+            "movement": [
+                {
+                    "type": "Move",
+                    "keys": "Arrow Keys"
+                },
+                {
+                    "type": "Float / Fly",
+                    "keys": "Z (hold)"
+                },
+                {
+                    "type": "Inhale / Exhale Star",
+                    "keys": "X"
+                },
+                {
+                    "type": "Copy / Swallow",
+                    "keys": "X (while inhaling)"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select",
+                    "keys": "Shift"
+                }
+            ]
         },
         {
             "_id": "6a1f2e3b4c5d6e7f8a9b0c1d",
@@ -275,17 +662,47 @@
             "year": 1991,
             "date_of_release": "1991-06-23",
             "cover_url": "/images/game_covers/sonic_the_hedgehog.jpg",
-            "summary": "Sonic the Hedgehog is a 2D side-scrolling platformer developed by Sonic Team for the Sega Genesis. Players control Sonic, a blue hedgehog with supersonic speed, on a mission to stop the evil Dr. Robotnik from enslaving animals and collecting the Chaos Emeralds.",
-            "additional_summary": "The game introduced iconic gameplay mechanics such as loop-de-loops, springs, and speed boosters, setting the foundation for one of gaming's most recognizable franchises. It was designed to rival Nintendo's Mario and serve as Sega's mascot title.",
+            "summary": "Sonic the Hedgehog is a 2D side-scrolling platformer for the Sega Genesis. Players control Sonic on a mission to stop Dr. Robotnik from enslaving animals.",
+            "additional_summary": "The game introduced iconic gameplay mechanics such as loop-de-loops and speed boosters.",
             "developer": "Sonic Team",
             "genre": [
                 "Platformer",
                 "Action"
             ],
-            "trivia": "Sonic's original concept design had him with fangs and a human girlfriend named Madonna, both of which were scrapped before release. The game's Green Hill Zone theme is one of the most recognizable pieces of video game music ever composed.",
+            "trivia": "Sonic original concept design had him with fangs and a human girlfriend named Madonna, both scrapped before release.",
             "path": "/roms/segaMD/sonic_the_hedgehog.md",
             "platform": "segaMD",
-            "platform_name": "Sega Genesis"
+            "platform_name": "Sega Genesis",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Look Up",
+                    "keys": "Arrow Up"
+                },
+                {
+                    "type": "Crouch / Roll",
+                    "keys": "Arrow Down"
+                },
+                {
+                    "type": "Jump",
+                    "keys": "Z or X or C"
+                },
+                {
+                    "type": "Spin Dash (hold Crouch, press Jump)",
+                    "keys": "Arrow Down + Z"
+                },
+                {
+                    "type": "Spin Dash Release",
+                    "keys": "Release Arrow Down"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                }
+            ]
         },
         {
             "_id": "7b2e3f4a5b6c7d8e9f0a1b2c",
@@ -293,17 +710,55 @@
             "year": 1996,
             "date_of_release": "1996-02-01",
             "cover_url": "/images/game_covers/mortal_kombat_3.jpeg",
-            "summary": "Ultimate Mortal Kombat 3 is the updated version of Mortal Kombat 3, featuring an expanded roster of fighters, new stages, and additional finishing moves. Players battle through a series of opponents in brutal one-on-one combat to defeat the sorcerer Shao Kahn.",
-            "additional_summary": "The Genesis port brought back fan-favourite characters like Kitana, Jade, and Reptile that were absent in the original MK3. It retained the signature digitized graphics and the controversially violent Fatality system that defined the series.",
+            "summary": "Ultimate Mortal Kombat 3 is the updated version of Mortal Kombat 3, featuring an expanded roster of fighters, new stages, and additional finishing moves.",
+            "additional_summary": "The Genesis port brought back fan-favourite characters like Kitana, Jade, and Reptile that were absent in the original MK3.",
             "developer": "Midway Games",
             "genre": [
                 "Fighting",
                 "Action"
             ],
-            "trivia": "Ultimate Mortal Kombat 3 was the first game in the series to introduce the Aggressor bar, a hidden meter that temporarily boosts a fighter's speed and power when filled. The Genesis version was developed by Probe Entertainment.",
+            "trivia": "Ultimate Mortal Kombat 3 was the first game in the series to introduce the Aggressor bar.",
             "path": "/roms/segaMD/ultimate_mortal_kombat_3.md",
             "platform": "segaMD",
-            "platform_name": "Sega Genesis"
+            "platform_name": "Sega Genesis",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Crouch",
+                    "keys": "Arrow Down"
+                },
+                {
+                    "type": "Jump",
+                    "keys": "Arrow Up"
+                },
+                {
+                    "type": "High Punch",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Low Punch",
+                    "keys": "X"
+                },
+                {
+                    "type": "High Kick",
+                    "keys": "C"
+                },
+                {
+                    "type": "Low Kick",
+                    "keys": "A"
+                },
+                {
+                    "type": "Block",
+                    "keys": "S"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                }
+            ]
         },
         {
             "_id": "8c3f4a5b6c7d8e9f0a1b2c3d",
@@ -311,17 +766,43 @@
             "year": 1995,
             "date_of_release": "1995-02-18",
             "cover_url": "/images/game_covers/ristar.jpeg",
-            "summary": "Ristar is a 2D action platformer developed by Sonic Team in which players control Ristar, a young star with extendable arms, on a quest to rescue his father and save the galaxy from the evil space pirate Kaiser Greedy.",
-            "additional_summary": "Unlike traditional platformers, Ristar's core mechanic revolves around grabbing enemies and objects with his stretchy arms rather than jumping on them. The game is widely praised for its vibrant visuals, diverse worlds, and excellent soundtrack.",
+            "summary": "Ristar is a 2D action platformer in which players control Ristar, a young star with extendable arms, on a quest to rescue his father.",
+            "additional_summary": "Ristar core mechanic revolves around grabbing enemies with his stretchy arms.",
             "developer": "Sonic Team",
             "genre": [
                 "Platformer",
                 "Action"
             ],
-            "trivia": "Ristar originated from early concept sketches that eventually evolved into Sonic the Hedgehog. One early prototype featured a rabbit that grabbed things with its long ears — elements that were later reimagined as Ristar's stretchy arms.",
+            "trivia": "Ristar originated from early concept sketches that eventually evolved into Sonic the Hedgehog.",
             "path": "/roms/segaMD/ristar.md",
             "platform": "segaMD",
-            "platform_name": "Sega Genesis"
+            "platform_name": "Sega Genesis",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Climb / Swim Up",
+                    "keys": "Arrow Up"
+                },
+                {
+                    "type": "Crouch / Swim Down",
+                    "keys": "Arrow Down"
+                },
+                {
+                    "type": "Extend Arms / Grab Enemy",
+                    "keys": "Z or X or C"
+                },
+                {
+                    "type": "Star Yell Attack (while latched)",
+                    "keys": "Z (hold)"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                }
+            ]
         },
         {
             "_id": "502",
@@ -336,10 +817,36 @@
                 "Platformer",
                 "Action"
             ],
-            "summary": "One of the most visually stunning and mechanically inventive platformers on the Sega Genesis, Rocket Knight Adventures follows Sparkster, a valiant opossum knight equipped with a powerful rocket-propelled jetpack, as he battles through five action-packed worlds to stop the evil pig army of the Devotindos Empire and the traitorous rival knight Axel Gear from kidnapping Princess Sherry and unleashing an ancient weapon of mass destruction. The jetpack mechanic sets the game apart from every other platformer of its era, allowing Sparkster to charge up and blast in any direction, deflect projectiles with his sword, and chain aerial combos in a way that felt completely unique. Packed with incredible boss fights, Mode 7 style effects, and a soaring soundtrack, it is widely considered one of the hidden gems of the 16-bit era.",
-            "additional_summary": "Rocket Knight Adventures was praised for its outstanding production values, with large detailed sprites, smooth animation, and set pieces that pushed the Genesis hardware impressively — including a memorable rocket sled sequence and giant mech battles.",
-            "trivia": "The game spawned two sequels — Sparkster on both the Genesis and SNES in 1994, and a modern revival simply titled Rocket Knight released on PC and consoles in 2010. Konami has since let the franchise go dormant.",
-            "path": "/roms/segaMD/rocket_knight_adventures.md"
+            "summary": "Rocket Knight Adventures follows Sparkster, a valiant opossum knight with a rocket-propelled jetpack, battling through five worlds to stop the evil pig army.",
+            "additional_summary": "Praised for outstanding production values and set pieces that pushed the Genesis hardware impressively.",
+            "trivia": "The game spawned two sequels — Sparkster on both the Genesis and SNES in 1994.",
+            "path": "/roms/segaMD/rocket_knight_adventures.md",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Crouch",
+                    "keys": "Arrow Down"
+                },
+                {
+                    "type": "Jump",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Sword Attack / Deflect Projectile",
+                    "keys": "X"
+                },
+                {
+                    "type": "Rocket Boost Charge (hold) + Direction",
+                    "keys": "C (hold) + Arrow Key"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                }
+            ]
         },
         {
             "_id": "a3f7c2d1-84e6-4b19-9f02-d5c8e1a07b3f",
@@ -354,10 +861,40 @@
                 "Action",
                 "Beat 'em Up"
             ],
-            "summary": "Based on the massively popular manga and anime series by Eiichiro Oda, this Game Boy Advance title puts players in the straw hat of Monkey D. Luffy and his Straw Hat Pirates crew as they battle their way through iconic enemies and locations drawn directly from the beloved source material. The game features the rubber-limbed Luffy's signature Gum-Gum abilities alongside the distinct fighting styles of crewmates like Zoro, Nami, Usopp, and Sanji across a series of brawler-style stages. A must-play for fans of the franchise looking for a portable One Piece fix on the GBA.",
-            "additional_summary": "The game draws from early arcs of the One Piece manga, faithfully adapting the art style and character designs of the anime into the GBA's hardware with colorful and expressive sprites.",
-            "trivia": "One Piece was originally rejected by Shonen Jump editors before becoming the best-selling manga of all time. The GBA saw several One Piece titles released exclusively in Japan.",
-            "path": "/roms/gba/one_piece.gba"
+            "summary": "Based on the massively popular manga and anime series, this GBA title puts players in the straw hat of Monkey D. Luffy battling through iconic enemies and locations.",
+            "additional_summary": "The game draws from early arcs of the One Piece manga.",
+            "trivia": "One Piece was originally rejected by Shonen Jump editors before becoming the best-selling manga of all time.",
+            "path": "/roms/gba/one_piece.gba",
+            "movement": [
+                {
+                    "type": "Move",
+                    "keys": "Arrow Keys"
+                },
+                {
+                    "type": "Attack / Gum-Gum Ability",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Jump",
+                    "keys": "X"
+                },
+                {
+                    "type": "Special Move / Combo",
+                    "keys": "A"
+                },
+                {
+                    "type": "Guard / Dodge",
+                    "keys": "S"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select",
+                    "keys": "Shift"
+                }
+            ]
         },
         {
             "_id": "b8e1d4f0-21a3-4c77-8e56-f9b2c7d30a1e",
@@ -372,10 +909,48 @@
                 "Racing",
                 "Action"
             ],
-            "summary": "The GBA adaptation of the massively successful street racing game follows a young racer working their way up the Blacklist — a ranking of the most notorious illegal street racers in the city of Rockport — while evading an increasingly aggressive police force determined to shut down the underground racing scene. The game condenses the open-world thrills of the console original into a series of top-down races and police chases that capture the cat-and-mouse tension of being Rockport's most wanted driver. Featuring a roster of licensed exotic cars and the series' signature high-speed pursuits, it delivers a solid portable racing experience.",
-            "additional_summary": "The GBA version uses a top-down perspective rather than the third-person view of the console versions, but retains the core Blacklist progression system and police pursuit mechanics that made the original famous.",
-            "trivia": "Need for Speed: Most Wanted (2005) is widely regarded as the peak of the classic NFS era and one of the best racing games ever made. The GBA port was developed simultaneously alongside the console versions.",
-            "path": "/roms/gba/need_for_speed_most_wanted.gba"
+            "summary": "The GBA adaptation follows a young racer working their way up the Blacklist while evading police in the city of Rockport.",
+            "additional_summary": "The GBA version uses a top-down perspective retaining the core Blacklist progression system.",
+            "trivia": "Need for Speed: Most Wanted (2005) is widely regarded as the peak of the classic NFS era.",
+            "path": "/roms/gba/need_for_speed_most_wanted.gba",
+            "movement": [
+                {
+                    "type": "Accelerate",
+                    "keys": "Arrow Up"
+                },
+                {
+                    "type": "Brake / Reverse",
+                    "keys": "Arrow Down"
+                },
+                {
+                    "type": "Steer Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Nitro Boost",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Handbrake / Drift",
+                    "keys": "X"
+                },
+                {
+                    "type": "L — Rear View Camera",
+                    "keys": "A"
+                },
+                {
+                    "type": "R — Evade Police / Horn",
+                    "keys": "S"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select / View Map",
+                    "keys": "Shift"
+                }
+            ]
         },
         {
             "_id": "c5d9b3e2-67f4-4a88-b1c0-e4a6f8d29c5b",
@@ -390,10 +965,48 @@
                 "Stealth",
                 "Action"
             ],
-            "summary": "The GBA adaptation of Tom Clancy's landmark stealth franchise puts players in the night-vision goggles of Third Echelon operative Sam Fisher as he slips through shadows, neutralizes guards, and extracts classified intelligence across a series of covert missions spanning global hotspots. Translated into a side-scrolling stealth-action format for the handheld, the game preserves the core tenets of the Splinter Cell experience — staying in the dark, using the environment to your advantage, and avoiding direct confrontation wherever possible. It is a remarkably faithful portable adaptation of one of the most acclaimed stealth series of the early 2000s.",
-            "additional_summary": "The GBA version cleverly adapts the 3D stealth gameplay of the original into a 2D side-scrolling format, retaining signature mechanics like light meters, last known position AI, and non-lethal takedown options.",
-            "trivia": "The original Splinter Cell was heavily influenced by the Metal Gear Solid series. Sam Fisher's iconic three-lens night vision goggles became one of the most recognizable silhouettes in gaming during the mid-2000s.",
-            "path": "/roms/gba/tom_clancy_splinter_cell.gba"
+            "summary": "The GBA adaptation puts players in the night-vision goggles of Third Echelon operative Sam Fisher across covert missions spanning global hotspots.",
+            "additional_summary": "The GBA version cleverly adapts 3D stealth gameplay into a 2D side-scrolling format.",
+            "trivia": "The original Splinter Cell was heavily influenced by the Metal Gear Solid series.",
+            "path": "/roms/gba/tom_clancy_splinter_cell.gba",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Climb / Look Up",
+                    "keys": "Arrow Up"
+                },
+                {
+                    "type": "Crouch / Sneak",
+                    "keys": "Arrow Down"
+                },
+                {
+                    "type": "Jump / Grab Ledge",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Attack / Shoot",
+                    "keys": "X"
+                },
+                {
+                    "type": "Toggle Night Vision",
+                    "keys": "A"
+                },
+                {
+                    "type": "Whistle / Distract Guard",
+                    "keys": "S"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select / View Objectives",
+                    "keys": "Shift"
+                }
+            ]
         },
         {
             "_id": "d2a0e5c7-39b8-4f61-a7d3-c1e9b4f06d2a",
@@ -408,10 +1021,36 @@
                 "Arcade",
                 "Puzzle"
             ],
-            "summary": "A fantastic compilation celebrating over two decades of Pac-Man history, Pac-Man Collection bundles four classic Namco arcade titles — the original Pac-Man, Pac-Attack, Pac-Mania, and Pac-Land — into a single GBA cartridge, giving fans a comprehensive portable tour through the evolution of the iconic yellow dot-muncher. Each game offers a distinctly different experience, from the pure maze-chase tension of the original to the isometric 3D bouncing of Pac-Mania and the puzzle block-dropping of Pac-Attack. It is an essential collection for retro fans and a perfect showcase of how enduring and versatile the Pac-Man formula has proven across multiple genres and generations.",
-            "additional_summary": "The collection includes faithful ports of all four arcade originals with minimal compromises, making it one of the best classic arcade compilations available on the Game Boy Advance.",
-            "trivia": "Pac-Man, originally called Puck Man in Japan, was renamed for Western markets due to concerns that vandals would change the P to an F on arcade cabinets. It remains one of the highest-grossing arcade games in history.",
-            "path": "/roms/gba/pac_man_collection.gba"
+            "summary": "Pac-Man Collection bundles four classic Namco arcade titles into a single GBA cartridge.",
+            "additional_summary": "The collection includes faithful ports of all four arcade originals.",
+            "trivia": "Pac-Man, originally called Puck Man in Japan, was renamed for Western markets.",
+            "path": "/roms/gba/pac_man_collection.gba",
+            "movement": [
+                {
+                    "type": "Move Up",
+                    "keys": "Arrow Up"
+                },
+                {
+                    "type": "Move Down",
+                    "keys": "Arrow Down"
+                },
+                {
+                    "type": "Move Left",
+                    "keys": "Arrow Left"
+                },
+                {
+                    "type": "Move Right",
+                    "keys": "Arrow Right"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select Game / Mode",
+                    "keys": "Shift"
+                }
+            ]
         },
         {
             "_id": "e6f3a1b9-50c7-4d22-9e84-b7d0c2e18f6e",
@@ -426,10 +1065,40 @@
                 "Action",
                 "RPG"
             ],
-            "summary": "Dragon Ball Z: The Legend of Goku adapts the iconic Saiyan, Frieza, and Cell sagas of the beloved anime into a top-down action RPG that lets players relive Goku's most legendary battles from his arrival on Earth through the climactic showdown with the perfect android Cell. Players level up Goku's stats, learn new ki abilities like the Kamehameha and Spirit Bomb, and explore iconic DBZ locations including Kami's Lookout, Planet Namek, and the Hyperbolic Time Chamber. Despite divisive reviews at launch, the game built a nostalgic following among fans who grew up with it as one of the few ways to experience the full DBZ story arc on a handheld.",
-            "additional_summary": "The game covers an unusually large chunk of the Dragon Ball Z story compared to most licensed titles of the era, spanning three major sagas and featuring many of the series' most memorable moments and transformations.",
-            "trivia": "The game was followed by two GBA sequels — The Legacy of Goku II in 2003 and Buu's Fury in 2004 — both of which received considerably higher critical acclaim and are considered among the best DBZ games ever made.",
-            "path": "/roms/gba/dragonball_z_legend_of_goku.GBA"
+            "summary": "Dragon Ball Z: The Legend of Goku adapts the iconic Saiyan, Frieza, and Cell sagas into a top-down action RPG.",
+            "additional_summary": "The game covers three major sagas spanning many of the series most memorable moments.",
+            "trivia": "Followed by two GBA sequels — Legacy of Goku II in 2003 and Buu's Fury in 2004.",
+            "path": "/roms/gba/dragonball_z_legend_of_goku.GBA",
+            "movement": [
+                {
+                    "type": "Move / Navigate",
+                    "keys": "Arrow Keys"
+                },
+                {
+                    "type": "Melee Attack / Confirm",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Ki Blast / Cancel",
+                    "keys": "X"
+                },
+                {
+                    "type": "Special Ability (Kamehameha etc.)",
+                    "keys": "A"
+                },
+                {
+                    "type": "Guard / Dodge",
+                    "keys": "S"
+                },
+                {
+                    "type": "Start / Pause / Menu",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select",
+                    "keys": "Shift"
+                }
+            ]
         },
         {
             "_id": "9d4a5b6c7d8e9f0a1b2c3d4e",
@@ -437,17 +1106,47 @@
             "year": 1992,
             "date_of_release": "1992-11-24",
             "cover_url": "/images/game_covers/sonic_the_hedgehog_2.jpg",
-            "summary": "Sonic the Hedgehog 2 is the sequel to the original Sonic game and introduces Miles 'Tails' Prower as Sonic's sidekick. Players race through new zones to stop Dr. Robotnik from building the Death Egg space station using the power of the Chaos Emeralds.",
-            "additional_summary": "The game introduced the spin dash move, allowing Sonic to rev up and launch at full speed from a standstill. It also featured the first two-player split-screen competitive mode in the series. The game became the best-selling Genesis title of all time.",
+            "summary": "Sonic the Hedgehog 2 introduces Miles Tails Prower as Sonic's sidekick. Players race through new zones to stop Dr. Robotnik from building the Death Egg.",
+            "additional_summary": "The game introduced the spin dash move and featured the first two-player split-screen competitive mode.",
             "developer": "Sonic Team",
             "genre": [
                 "Platformer",
                 "Action"
             ],
-            "trivia": "Sonic 2 was developed simultaneously across offices in Japan and the US, with much of the work done at Sega Technical Institute in San Francisco. Several planned levels, including the notorious Hidden Palace Zone, were cut and left incomplete in the final ROM.",
+            "trivia": "Sonic 2 was developed simultaneously across offices in Japan and the US.",
             "path": "/roms/segaMD/sonic_the_hedgehod_2.md",
             "platform": "segaMD",
-            "platform_name": "Sega Genesis"
+            "platform_name": "Sega Genesis",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Look Up",
+                    "keys": "Arrow Up"
+                },
+                {
+                    "type": "Crouch / Roll",
+                    "keys": "Arrow Down"
+                },
+                {
+                    "type": "Jump",
+                    "keys": "Z or X or C"
+                },
+                {
+                    "type": "Spin Dash (hold Crouch, press Jump)",
+                    "keys": "Arrow Down + Z"
+                },
+                {
+                    "type": "Spin Dash Release",
+                    "keys": "Release Arrow Down"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                }
+            ]
         },
         {
             "_id": "ae5b6c7d8e9f0a1b2c3d4e5f",
@@ -455,17 +1154,51 @@
             "year": 1995,
             "date_of_release": "1995-10-01",
             "cover_url": "/images/game_covers/road_rash_3.jpeg",
-            "summary": "Road Rash 3 is an illegal street racing game in which players compete in motorcycle races across real-world locations including Kenya, Germany, Brazil, Japan, and the USA. Combat is a central element — riders can punch, kick, and wield weapons to knock opponents off their bikes.",
-            "additional_summary": "The third entry in EA's beloved Road Rash series expanded the global setting significantly and introduced new weapon types and police AI. The game featured a full CD-quality soundtrack on the Sega CD version, while the Genesis version retained its high-octane gameplay.",
+            "summary": "Road Rash 3 is an illegal street racing game where players compete in motorcycle races across real-world locations including Kenya, Germany, Brazil, Japan, and the USA.",
+            "additional_summary": "The third entry expanded the global setting significantly and introduced new weapon types.",
             "developer": "Electronic Arts",
             "genre": [
                 "Racing",
                 "Action"
             ],
-            "trivia": "Road Rash 3 was one of the few EA titles that saw release exclusively on Sega platforms at the time, reflecting EA's strong relationship with Sega in the mid-1990s. The game's international race locations were inspired by real-world motorsport events.",
+            "trivia": "Road Rash 3 was one of the few EA titles that saw release exclusively on Sega platforms.",
             "path": "/roms/segaMD/road_rash_3.md",
             "platform": "segaMD",
-            "platform_name": "Sega Genesis"
+            "platform_name": "Sega Genesis",
+            "movement": [
+                {
+                    "type": "Accelerate",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Brake / Slow Down",
+                    "keys": "X"
+                },
+                {
+                    "type": "Steer Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Punch Left",
+                    "keys": "Arrow Left + C"
+                },
+                {
+                    "type": "Punch Right",
+                    "keys": "Arrow Right + C"
+                },
+                {
+                    "type": "Kick",
+                    "keys": "Arrow Up + C"
+                },
+                {
+                    "type": "Grab Weapon / Opponent",
+                    "keys": "C"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                }
+            ]
         },
         {
             "_id": "c07d8e9f0a1b2c3d4e5f6a7b",
@@ -473,17 +1206,39 @@
             "year": 1996,
             "date_of_release": "1996-03-29",
             "cover_url": "/images/game_covers/dragon_ball_z.jpg",
-            "summary": "Dragon Ball Z for the Sega Genesis is a fighting game based on the iconic anime and manga series. Players choose from a roster of iconic Z Fighters and villains, battling across iconic sagas from the series using energy-based special attacks and melee combat.",
-            "additional_summary": "The game captures the over-the-top power scaling of the anime with screen-filling ki blasts and transformation mechanics. It was primarily released in Japan and PAL regions and is a beloved title among Dragon Ball fans who grew up with the Genesis.",
+            "summary": "Dragon Ball Z for the Sega Genesis is a fighting game. Players choose from a roster of Z Fighters and villains using energy-based special attacks and melee combat.",
+            "additional_summary": "The game captures the over-the-top power scaling of the anime with screen-filling ki blasts.",
             "developer": "TOSE / Bandai",
             "genre": [
                 "Fighting",
                 "Action"
             ],
-            "trivia": "Several Dragon Ball Z games were released on the Sega Genesis in Japan under different subtitles. The games were localised for European markets but largely skipped a full North American Genesis release, making original cartridges relatively sought-after today.",
+            "trivia": "Several Dragon Ball Z games were released on the Sega Genesis in Japan under different subtitles.",
             "path": "/roms/segaMD/dragon_ball_z.md",
             "platform": "segaMD",
-            "platform_name": "Sega Genesis"
+            "platform_name": "Sega Genesis",
+            "movement": [
+                {
+                    "type": "Move / Navigate",
+                    "keys": "Arrow Keys"
+                },
+                {
+                    "type": "Attack / Ki Blast",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Guard / Block",
+                    "keys": "X"
+                },
+                {
+                    "type": "Special Move / Transformation",
+                    "keys": "C"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                }
+            ]
         },
         {
             "_id": "d18e9f0a1b2c3d4e5f6a7b8c",
@@ -491,18 +1246,48 @@
             "year": 1995,
             "date_of_release": "1995-09-01",
             "cover_url": "/images/game_covers/wwf_wrestlemania.jpeg",
-            "summary": "WWF WrestleMania: The Arcade Game is an over-the-top wrestling brawler featuring real WWF superstars of the era including Bret Hart, Shawn Michaels, Razor Ramon, and The Undertaker. Rather than simulate wrestling, the game leans into arcade-style action with exaggerated special moves and fast-paced combat.",
-            "additional_summary": "Developed by Midway using digitized character sprites similar to Mortal Kombat, the game was a departure from simulation-style wrestling games. Each superstar has unique signature moves and finishing specials that reflect their real-world personas in a wildly amplified way.",
+            "summary": "WWF WrestleMania: The Arcade Game is an over-the-top wrestling brawler featuring real WWF superstars including Bret Hart, Shawn Michaels, Razor Ramon, and The Undertaker.",
+            "additional_summary": "Developed by Midway using digitized character sprites similar to Mortal Kombat.",
             "developer": "Midway Games / Sculptured Software",
             "genre": [
                 "Wrestling",
                 "Fighting",
                 "Arcade"
             ],
-            "trivia": "The game used the same digitization technology as Mortal Kombat to capture the likenesses of real WWF wrestlers. Diesel was a hidden character in the arcade version but was included in the home console roster. Lex Luger was removed from later versions after leaving the WWF.",
+            "trivia": "The game used the same digitization technology as Mortal Kombat to capture the likenesses of real WWF wrestlers.",
             "path": "/roms/segaMD/wwf_wrestlemania.md",
             "platform": "segaMD",
-            "platform_name": "Sega Genesis"
+            "platform_name": "Sega Genesis",
+            "movement": [
+                {
+                    "type": "Move / Navigate",
+                    "keys": "Arrow Keys"
+                },
+                {
+                    "type": "High Attack / Punch",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Low Attack / Kick",
+                    "keys": "X"
+                },
+                {
+                    "type": "Special / Finishing Move",
+                    "keys": "C"
+                },
+                {
+                    "type": "Pin / Taunt",
+                    "keys": "A"
+                },
+                {
+                    "type": "Block",
+                    "keys": "S"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                }
+            ]
         },
         {
             "_id": "e29f0a1b2c3d4e5f6a7b8c9d",
@@ -510,17 +1295,47 @@
             "year": 1994,
             "date_of_release": "1994-10-18",
             "cover_url": "/images/game_covers/sonic_&_knuckles.jpeg",
-            "summary": "Sonic & Knuckles is a platformer that serves as both a standalone game and the second half of Sonic the Hedgehog 3. Players can play as either Sonic or Knuckles, each with distinct abilities, as they race through new zones to stop Dr. Robotnik and destroy the Death Egg once and for all.",
-            "additional_summary": "The cartridge featured the revolutionary 'Lock-On Technology' slot on top, allowing players to physically connect Sonic the Hedgehog 2 or 3 to expand gameplay. Plugging in Sonic 3 created the definitive Sonic 3 & Knuckles experience, widely considered one of the best games on the Genesis.",
+            "summary": "Sonic & Knuckles serves as both a standalone game and the second half of Sonic the Hedgehog 3.",
+            "additional_summary": "The cartridge featured the revolutionary Lock-On Technology slot on top.",
             "developer": "Sonic Team",
             "genre": [
                 "Platformer",
                 "Action"
             ],
-            "trivia": "Sonic & Knuckles and Sonic 3 were originally intended to be a single game, but time and cartridge size constraints forced Sega to split them into two separate releases. The Lock-On Technology cartridge design was patented by Sega and remains unique in gaming history.",
+            "trivia": "Sonic & Knuckles and Sonic 3 were originally intended to be a single game.",
             "path": "/roms/segaMD/sonic_&_knuckles.md",
             "platform": "segaMD",
-            "platform_name": "Sega Genesis"
+            "platform_name": "Sega Genesis",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Look Up",
+                    "keys": "Arrow Up"
+                },
+                {
+                    "type": "Crouch / Roll",
+                    "keys": "Arrow Down"
+                },
+                {
+                    "type": "Jump",
+                    "keys": "Z or X or C"
+                },
+                {
+                    "type": "Spin Dash (hold Crouch, press Jump)",
+                    "keys": "Arrow Down + Z"
+                },
+                {
+                    "type": "Spin Dash Release",
+                    "keys": "Release Arrow Down"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                }
+            ]
         },
         {
             "_id": "f3a01b2c3d4e5f6a7b8c9d0e",
@@ -528,17 +1343,47 @@
             "year": 1993,
             "date_of_release": "1993-11-11",
             "cover_url": "/images/game_covers/aladdin.jpeg",
-            "summary": "Disney's Aladdin for the Sega Genesis is an action platformer based on the 1992 animated film. Players guide Aladdin through the streets of Agrabah, the Cave of Wonders, and the Sultan's Palace, wielding a scimitar and throwing apples to defeat enemies and ultimately face the villain Jafar.",
-            "additional_summary": "The Genesis version was developed separately from the SNES version and is widely regarded as the superior port due to its fluid animation, which was produced using actual Disney animation cels and the DIGEN engine developed by Virgin Games. Many Disney animators contributed directly to the game's art.",
+            "summary": "Disney's Aladdin for the Sega Genesis is an action platformer based on the 1992 animated film.",
+            "additional_summary": "The Genesis version is widely regarded as the superior port due to its fluid Disney animation.",
             "developer": "Virgin Games",
             "genre": [
                 "Platformer",
                 "Action"
             ],
-            "trivia": "Disney's Aladdin on Genesis was one of the first games to feature animation directly produced by Disney animators, giving it an unusually cinematic look for its time. The rivalry between the Genesis and SNES versions of Aladdin became legendary among 1990s gamers, fuelling the broader console wars debate.",
+            "trivia": "Aladdin on Genesis was one of the first games to feature animation directly produced by Disney animators.",
             "path": "/roms/segaMD/aladdin.md",
             "platform": "segaMD",
-            "platform_name": "Sega Genesis"
+            "platform_name": "Sega Genesis",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Crouch",
+                    "keys": "Arrow Down"
+                },
+                {
+                    "type": "Look Up",
+                    "keys": "Arrow Up"
+                },
+                {
+                    "type": "Jump / Grab Ledge",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Sword Slash",
+                    "keys": "X"
+                },
+                {
+                    "type": "Throw Apple",
+                    "keys": "C"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                }
+            ]
         },
         {
             "_id": "301",
@@ -552,10 +1397,40 @@
             "genre": [
                 "Fighting"
             ],
-            "summary": "The handheld port of the arcade phenomenon that shocked the world, Mortal Kombat brings its brutal one-on-one fighting to the Game Boy with a roster of seven iconic warriors — Liu Kang, Johnny Cage, Sonya Blade, Kano, Sub-Zero, Scorpion, and Raiden — all competing in a deadly tournament to defend Earthrealm from the sorcerer Shang Tsung. Despite the obvious hardware limitations of the monochrome screen, the game faithfully recreates the core gameplay loop of the arcade original with recognizable special moves like Scorpion's spear throw and Sub-Zero's freeze blast intact. It stands as an impressive technical achievement for the Game Boy and offered fans a portable way to experience one of the most controversial and culturally significant fighting games ever made.",
-            "additional_summary": "Due to Nintendo's strict content policies at the time, the Game Boy version — like the SNES port — omits the series' infamous fatalities and blood, replacing them with sweat and less graphic finishing moves.",
-            "trivia": "Mortal Kombat's graphic violence directly led to the creation of the ESRB rating system in 1994. The arcade original used digitized photographs of real actors for its character sprites, a technique that was revolutionary at the time.",
-            "path": "/roms/gb/mortal_kombat.gb"
+            "summary": "The handheld port of the arcade phenomenon, Mortal Kombat brings brutal one-on-one fighting to the Game Boy with seven iconic warriors competing in a deadly tournament.",
+            "additional_summary": "The Game Boy version omits the infamous fatalities and blood due to Nintendo content policies.",
+            "trivia": "Mortal Kombat's graphic violence directly led to the creation of the ESRB rating system in 1994.",
+            "path": "/roms/gb/mortal_kombat.gb",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Crouch",
+                    "keys": "Arrow Down"
+                },
+                {
+                    "type": "Jump",
+                    "keys": "Arrow Up"
+                },
+                {
+                    "type": "High Punch",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Low Kick",
+                    "keys": "X"
+                },
+                {
+                    "type": "Block",
+                    "keys": "Shift"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                }
+            ]
         },
         {
             "_id": "207",
@@ -570,10 +1445,32 @@
                 "Action-Adventure",
                 "Puzzle"
             ],
-            "summary": "The game that defined the action-adventure genre, The Legend of Zelda drops the young hero Link into the vast and dangerous land of Hyrule on a quest to collect the eight pieces of the Triforce of Wisdom and rescue Princess Zelda from the clutches of the demon king Ganon. Its open-world structure was revolutionary at the time, giving players the freedom to explore the overworld and tackle dungeons in a non-linear order, hiding secrets behind every bombable wall and burnable bush. The gold cartridge with battery-backed saving was itself an event, allowing players to preserve their progress for the first time in a home console adventure game.",
-            "additional_summary": "The Legend of Zelda was one of the first nes games to feature a battery-backed save system, letting players save their progress rather than use passwords, which was groundbreaking at the time.",
-            "trivia": "The game's name comes from Princess Zelda, who was named after Zelda Fitzgerald, wife of author F. Scott Fitzgerald. Shigeru Miyamoto designed the game inspired by his childhood explorations of the forests near Kyoto.",
-            "path": "/roms/nes/legend_of_zelda.nes"
+            "summary": "The game that defined the action-adventure genre, The Legend of Zelda drops Link into the vast land of Hyrule on a quest to collect the eight pieces of the Triforce of Wisdom.",
+            "additional_summary": "The Legend of Zelda was one of the first nes games to feature a battery-backed save system.",
+            "trivia": "The game's name comes from Princess Zelda, who was named after Zelda Fitzgerald.",
+            "path": "/roms/nes/legend_of_zelda.nes",
+            "movement": [
+                {
+                    "type": "Move",
+                    "keys": "Arrow Keys"
+                },
+                {
+                    "type": "Attack (Sword)",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Use Item",
+                    "keys": "X"
+                },
+                {
+                    "type": "Start / Open Inventory",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select",
+                    "keys": "Shift"
+                }
+            ]
         },
         {
             "_id": "208",
@@ -588,10 +1485,40 @@
                 "Action",
                 "Platformer"
             ],
-            "summary": "The third entry in Capcom's beloved Blue Bomber series introduces eight new Robot Masters, the trusty robotic dog Rush, and the mysterious Proto Man — Mega Man's enigmatic older brother — in what many fans consider the pinnacle of the nes Mega Man games. Beyond the eight main stages, players must also revisit updated versions of the Robot Masters from Mega Man 2 in a thrilling second half that doubles the game's content. The slide mechanic introduced here became a series staple, and the game's enormous scope and memorable soundtrack cemented its place as one of the greatest action games on the nes.",
-            "additional_summary": "Mega Man 3 was the first game in the series to introduce Rush the robotic dog, who replaced the series' previous support items with more dynamic traversal abilities like Rush Coil and Rush Jet.",
-            "trivia": "Proto Man, known as Blues in Japan, was originally intended to appear in Mega Man 2 but was held back for the third game. The game was reportedly rushed to market, with director Keiji Inafune considering it unfinished.",
-            "path": "/roms/nes/mega_man_3.nes"
+            "summary": "The third entry in Capcom's Blue Bomber series introduces eight new Robot Masters, the trusty robotic dog Rush, and the mysterious Proto Man.",
+            "additional_summary": "Mega Man 3 was the first game in the series to introduce Rush the robotic dog.",
+            "trivia": "Proto Man was originally intended to appear in Mega Man 2 but was held back for the third game.",
+            "path": "/roms/nes/mega_man_3.nes",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Climb Ladder Up / Down",
+                    "keys": "Arrow Up / Down"
+                },
+                {
+                    "type": "Jump",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Slide (MM3+)",
+                    "keys": "Arrow Down + Z"
+                },
+                {
+                    "type": "Shoot Mega Buster",
+                    "keys": "X"
+                },
+                {
+                    "type": "Pause / Select Weapon",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select",
+                    "keys": "Shift"
+                }
+            ]
         },
         {
             "_id": "209",
@@ -606,10 +1533,40 @@
                 "Action",
                 "Platformer"
             ],
-            "summary": "Universally regarded as one of the greatest video games ever made, Mega Man 2 refined and perfected every element of the original with eight brilliantly designed Robot Masters, an iconic soundtrack by Takashi Tateishi, and a masterfully balanced difficulty that felt both challenging and fair. The introduction of the Energy Tank item, the password system, and weapons like Metal Blade and Bubble Lead gave the game incredible depth and replayability that kept players coming back for decades. Its influence on the action-platformer genre is immeasurable and it consistently tops lists of the best nes games ever created.",
-            "additional_summary": "Mega Man 2 was a passion project developed after the modest success of the original — the team worked on it in their spare time after management was hesitant to greenlight a sequel.",
-            "trivia": "Metal Blade, Wood Man's weapon, is widely considered the most overpowered weapon in Mega Man history as it can be fired in eight directions and is effective against nearly every enemy in the game.",
-            "path": "/roms/nes/mega_man_2.nes"
+            "summary": "Universally regarded as one of the greatest video games ever made, Mega Man 2 refined and perfected every element of the original with eight brilliantly designed Robot Masters.",
+            "additional_summary": "Mega Man 2 was a passion project developed after the modest success of the original.",
+            "trivia": "Metal Blade is widely considered the most overpowered weapon in Mega Man history.",
+            "path": "/roms/nes/mega_man_2.nes",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Climb Ladder Up / Down",
+                    "keys": "Arrow Up / Down"
+                },
+                {
+                    "type": "Jump",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Slide (MM3+)",
+                    "keys": "Arrow Down + Z"
+                },
+                {
+                    "type": "Shoot Mega Buster",
+                    "keys": "X"
+                },
+                {
+                    "type": "Pause / Select Weapon",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select",
+                    "keys": "Shift"
+                }
+            ]
         },
         {
             "_id": "210",
@@ -624,10 +1581,44 @@
                 "Action",
                 "Platformer"
             ],
-            "summary": "A cinematic masterpiece for its time, Ninja Gaiden follows the young ninja Ryu Hayabusa as he travels to America to avenge his father's death and uncovers a vast demonic conspiracy involving a powerful ancient artifact called the Demon Statue. The game was groundbreaking for its extensive use of anime-style cutscenes between stages that told a surprisingly deep and engaging story — a first for action games of its era. Its tight sword-slashing combat, wall-jumping mechanics, and brutal difficulty made it one of the most beloved and notorious nes games ever released.",
-            "additional_summary": "Ninja Gaiden was one of the first nes games to use cinematic cutscenes to advance its story, a technique that was revolutionary at the time and helped establish narrative-driven game design.",
-            "trivia": "The game is notorious for its final boss gauntlet that forces players to re-fight the last three bosses before facing the final villain, making the ending one of the most infamously difficult in nes history.",
-            "path": "/roms/nes/ninja_gaiden.nes"
+            "summary": "Ninja Gaiden follows the young ninja Ryu Hayabusa as he travels to America to avenge his father's death and uncovers a vast demonic conspiracy.",
+            "additional_summary": "Ninja Gaiden was one of the first nes games to use cinematic cutscenes to advance its story.",
+            "trivia": "The game is notorious for its final boss gauntlet that forces players to re-fight the last three bosses.",
+            "path": "/roms/nes/ninja_gaiden.nes",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Climb / Wall Jump",
+                    "keys": "Arrow Up"
+                },
+                {
+                    "type": "Crouch",
+                    "keys": "Arrow Down"
+                },
+                {
+                    "type": "Jump / Wall Jump",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Sword Attack",
+                    "keys": "X"
+                },
+                {
+                    "type": "Use Ninja Art",
+                    "keys": "Arrow Up + X"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select Ninja Art",
+                    "keys": "Shift"
+                }
+            ]
         },
         {
             "_id": "211",
@@ -642,10 +1633,48 @@
                 "Sports",
                 "Boxing"
             ],
-            "summary": "One of the most beloved sports games ever created, Punch-Out!! puts players in the corner of the plucky underdog Little Mac as he punches, ducks, and dodges his way up the World Video Boxing Association circuit against a colorful roster of larger-than-life opponents with wildly distinct fighting styles and tells. Each opponent is a puzzle to be solved — learning their attack patterns and timing counters perfectly is the key to victory — giving the game an almost rhythm-game quality beneath its boxing exterior. From the lovably flamboyant Glass Joe to the invincible champion Mike Tyson, the game's cast of characters became some of the most iconic in nes history.",
-            "additional_summary": "The original nes release featured real boxer Mike Tyson as the final boss, licensed for three years. After the license expired in 1990, he was replaced by the fictional character Mr. Dream.",
-            "trivia": "Little Mac is only 17 years old and 107 pounds in the game's lore, making him the smallest boxer in the circuit. He later appeared as a playable character in Super Smash Bros. for Wii U and 3DS.",
-            "path": "/roms/nes/punch_out.nes"
+            "summary": "Punch-Out!! puts players in the corner of Little Mac as he punches, ducks, and dodges his way up the World Video Boxing Association circuit.",
+            "additional_summary": "The original nes release featured real boxer Mike Tyson as the final boss.",
+            "trivia": "Little Mac is only 17 years old and 107 pounds in the game's lore.",
+            "path": "/roms/nes/punch_out.nes",
+            "movement": [
+                {
+                    "type": "Dodge Left",
+                    "keys": "Arrow Left"
+                },
+                {
+                    "type": "Dodge Right",
+                    "keys": "Arrow Right"
+                },
+                {
+                    "type": "Block",
+                    "keys": "Arrow Up"
+                },
+                {
+                    "type": "Duck",
+                    "keys": "Arrow Down"
+                },
+                {
+                    "type": "Right Jab / Hook",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Left Jab / Hook",
+                    "keys": "X"
+                },
+                {
+                    "type": "Body Blow",
+                    "keys": "Arrow Down + Z or X"
+                },
+                {
+                    "type": "Star Punch / Special",
+                    "keys": "Z (after earning star)"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                }
+            ]
         },
         {
             "_id": "212",
@@ -660,10 +1689,40 @@
                 "Platformer",
                 "Action"
             ],
-            "summary": "Widely considered the greatest nes game ever made and one of the best video games of all time, Super Mario Bros. 3 sent Mario and Luigi on an epic quest across eight enormous worlds to rescue seven kings transformed into animals by Bowser's Koopalings and ultimately save Princess Peach. The game introduced an astonishing wealth of new power-ups including the Super Leaf Tanooki suit, the Frog Suit, and the Hammer Bros. Suit, along with a revolutionary overworld map system that gave players agency over stage order. Its sheer scale, variety, polish, and imagination set a benchmark for platformer design that has rarely been matched in the decades since.",
-            "additional_summary": "Super Mario Bros. 3 famously appeared in the 1989 film The Wizard before its North American release, functioning as a massive feature-length advertisement that generated enormous hype for the game.",
-            "trivia": "The game sold 17 million copies worldwide, making it the third best-selling nes game of all time. Shigeru Miyamoto has cited it as one of his personal favorite games he has created.",
-            "path": "/roms/nes/super_mario_bros_3.nes"
+            "summary": "Super Mario Bros. 3 sent Mario and Luigi on an epic quest across eight enormous worlds to rescue seven kings and ultimately save Princess Peach.",
+            "additional_summary": "Super Mario Bros. 3 famously appeared in the 1989 film The Wizard before its North American release.",
+            "trivia": "The game sold 17 million copies worldwide.",
+            "path": "/roms/nes/super_mario_bros_3.nes",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Crouch / Slide",
+                    "keys": "Arrow Down"
+                },
+                {
+                    "type": "Look Up",
+                    "keys": "Arrow Up"
+                },
+                {
+                    "type": "Jump / Fly (Tanooki/Cape)",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Run / Fire / Pick Up Item",
+                    "keys": "X"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select / Open Map Inventory",
+                    "keys": "Shift"
+                }
+            ]
         },
         {
             "_id": "213",
@@ -678,10 +1737,40 @@
                 "Platformer",
                 "Action"
             ],
-            "summary": "The unconventional but beloved sequel to Super Mario Bros., Super Mario Bros. 2 takes Mario, Luigi, Princess Peach, and Toad to the dream world of Subcon where the evil frog king Wart has enslaved its inhabitants, and tasks players with defeating him by pelting him with vegetables. Born from a reskin of the Japanese game Doki Doki Panic, the game introduced a four-character roster with meaningfully different abilities, a throw-based combat system, and a wealth of new enemies that became permanent fixtures of the Mario universe. Despite its unusual origins, it is fondly remembered for its charm, creativity, and the lasting additions it made to the franchise.",
-            "additional_summary": "Many enemies introduced in Super Mario Bros. 2 — including Shy Guy, Birdo, Bob-omb, and Pokey — were so popular that they became recurring characters throughout the entire Mario franchise.",
-            "trivia": "The original Japanese Super Mario Bros. 2 was considered too difficult for Western audiences and was replaced with an adapted version of Doki Doki Panic. The Japanese version was later released in the West as The Lost Levels.",
-            "path": "/roms/nes/super_mario_bros_2.nes"
+            "summary": "Super Mario Bros. 2 takes Mario, Luigi, Princess Peach, and Toad to the dream world of Subcon to defeat the evil frog king Wart.",
+            "additional_summary": "Many enemies introduced in Super Mario Bros. 2 became recurring characters throughout the entire Mario franchise.",
+            "trivia": "The original Japanese Super Mario Bros. 2 was considered too difficult for Western audiences.",
+            "path": "/roms/nes/super_mario_bros_2.nes",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Crouch / Enter Pipe / Dig",
+                    "keys": "Arrow Down"
+                },
+                {
+                    "type": "Climb Vine / Enter Door",
+                    "keys": "Arrow Up"
+                },
+                {
+                    "type": "Jump",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Pick Up / Throw",
+                    "keys": "X"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select Character",
+                    "keys": "Shift"
+                }
+            ]
         },
         {
             "_id": "214",
@@ -696,10 +1785,32 @@
                 "Action",
                 "Platformer"
             ],
-            "summary": "The first console game based on the massively popular Teenage Mutant Ninja Turtles franchise, letting players switch freely between Leonardo, Donatello, Michelangelo, and Raphael as they battle through Manhattan's streets and sewers to rescue April O'Neil and Splinter from the clutches of the Shredder and the Foot Clan. Each turtle features unique stats for speed, attack power, and reach, encouraging players to strategically switch characters based on the situation. Though remembered for its notorious dam level and punishing difficulty, it sold over four million copies and became one of the best-selling nes games of its time.",
-            "additional_summary": "The game is infamous for its third stage, which requires players to swim through an electrified underwater dam and defuse bombs in a strict time limit — widely regarded as one of the hardest sections in nes history.",
-            "trivia": "Despite being a Konami game on nes, this title is notably different in tone and style from the acclaimed Turtles arcade game Konami released the same year, which was a traditional beat 'em up.",
-            "path": "/roms/nes/teenage_mutant_ninja_turtles.nes"
+            "summary": "The first console TMNT game lets players switch between Leonardo, Donatello, Michelangelo, and Raphael battling through Manhattan's streets and sewers.",
+            "additional_summary": "The game is infamous for its third stage electrified underwater dam section.",
+            "trivia": "Despite being a Konami game, this title is notably different from the acclaimed Turtles arcade game.",
+            "path": "/roms/nes/teenage_mutant_ninja_turtles.nes",
+            "movement": [
+                {
+                    "type": "Move",
+                    "keys": "Arrow Keys"
+                },
+                {
+                    "type": "Jump",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Attack",
+                    "keys": "X"
+                },
+                {
+                    "type": "Switch Turtle",
+                    "keys": "Shift"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                }
+            ]
         },
         {
             "_id": "215",
@@ -713,10 +1824,36 @@
             "genre": [
                 "Puzzle"
             ],
-            "summary": "The nes port of the most influential puzzle game ever created, Tetris challenges players to arrange falling geometric pieces called Tetrominoes into complete horizontal lines that vanish, keeping the well from filling to the top for as long as possible. Developed originally by Soviet computer scientist Alexey Pajitnov in 1984, this Nintendo-published nes version brought the addictive gameplay to living rooms worldwide and helped establish the puzzle genre as a legitimate home console category. Its simple premise masks endless depth, and competitive Tetris on the nes remains an active and thriving community to this day with players pushing the game further than ever imagined.",
-            "additional_summary": "The nes version of Tetris gained renewed cultural attention in the 2010s and 2020s through competitive tournaments, where players achieved previously impossible kill screens through a technique called rolling.",
-            "trivia": "The rights to Tetris were famously fought over by Nintendo, Atari, and other publishers in a complex legal battle involving the Soviet government. Nintendo ultimately secured the rights and bundled it with the Game Boy, making both products massive hits.",
-            "path": "/roms/nes/tetris.nes"
+            "summary": "Tetris challenges players to arrange falling Tetrominoes into complete horizontal lines on the NES.",
+            "additional_summary": "The nes version of Tetris gained renewed cultural attention through competitive tournaments.",
+            "trivia": "Nintendo ultimately secured the Tetris rights and bundled it with the Game Boy.",
+            "path": "/roms/nes/tetris.nes",
+            "movement": [
+                {
+                    "type": "Move Piece Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Soft Drop (Speed Up Fall)",
+                    "keys": "Arrow Down"
+                },
+                {
+                    "type": "Rotate Piece Clockwise",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Rotate Counter-Clockwise",
+                    "keys": "X"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select Mode / Level",
+                    "keys": "Shift"
+                }
+            ]
         },
         {
             "_id": "216",
@@ -732,10 +1869,44 @@
                 "RPG",
                 "Platformer"
             ],
-            "summary": "The bold and unconventional sequel to The Legend of Zelda takes Link on a journey across a vast overworld map to restore six crystals to the palaces of Hyrule and ultimately awaken the sleeping Princess Zelda using the Triforce of Courage. Departing dramatically from its predecessor, the game blends an overhead exploration view with side-scrolling action-RPG combat, giving Link experience points, leveling stats, and a repertoire of magic spells to master. Though divisive for its sharp difficulty and radical departure from the original formula, it is praised for its ambitious scope and remains a unique and fascinating entry in the Zelda timeline.",
-            "additional_summary": "Zelda II is the only mainline Zelda game to feature a traditional RPG experience point and leveling system, and it remains the black sheep of the series that has never been directly replicated.",
-            "trivia": "The sleeping Princess Zelda in this game is a different Zelda from the original — she is an ancestor cursed by a wizard long ago. The tradition of naming all Hyrulean princesses Zelda originates from this game's backstory.",
-            "path": "/roms/nes/zelda2.nes"
+            "summary": "Zelda II takes Link on a journey across a vast overworld map to restore six crystals to the palaces of Hyrule and awaken the sleeping Princess Zelda.",
+            "additional_summary": "Zelda II is the only mainline Zelda game to feature a traditional RPG experience point and leveling system.",
+            "trivia": "The sleeping Princess Zelda in this game is an ancestor cursed by a wizard long ago.",
+            "path": "/roms/nes/zelda2.nes",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Enter Town / Look Up",
+                    "keys": "Arrow Up"
+                },
+                {
+                    "type": "Crouch / Low Strike",
+                    "keys": "Arrow Down"
+                },
+                {
+                    "type": "Jump",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Sword Strike (High / Low)",
+                    "keys": "X"
+                },
+                {
+                    "type": "Cast Magic Spell",
+                    "keys": "Arrow Up + X"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select Spell",
+                    "keys": "Shift"
+                }
+            ]
         }
     ]
 }

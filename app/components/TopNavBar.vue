@@ -1,17 +1,28 @@
 <template>
-    <div class="h-16 w-full bg-[#1E293B] text-white flex flex-row justify-between items-center px-8">
-        <div class="flex flex-row gap-3 items-center">
+    <div class="h-16 w-full bg-[#1E293B]/70 text-white flex flex-row justify-between items-center px-8 sticky top-0 z-50">
+        <div class="flex flex-row gap-8 items-center">
+            <div class="flex flex-row gap-2 items-center cursor-pointer"
+            @click="$router.push('/')"
+            >
 
-            <img src="" alt="Not Available">
+                <button class="bg-[#258CF4] px-2 py-3 rounded-md">
+                    
+                    <img src="/images/logo.svg" alt="Not Available">
+                </button>
+                <p class="text-xl font-bold">
+
+                    RetroQuest
+                </p>
+            </div>
             <div class="flex flex-row gap-3 items-center">
-                <NuxtLink to="/">Home</NuxtLink>
-                <NuxtLink to="/games">Games</NuxtLink>
+                <NuxtLink to="/games" class="font-medium text-lg"
+                :class="{
+                    'text-[#258CF4] underline': $route.path == '/games'
+                }"
+                >Library</NuxtLink>
             </div>
         </div>
-        <div class="flex flex-row gap-4 items-center">
-            <button class="bg-[#258CF4] shadow-[0_0_10px_#258CF4] text-white px-4 py-2 rounded-md">Sign Up</button>
-            <button class="bg-[#258CF4]/10 text-white px-4 py-2 rounded-md">Login</button>
-        </div>
+        
 
     </div>
 </template>

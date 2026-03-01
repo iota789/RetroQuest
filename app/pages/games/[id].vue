@@ -1,42 +1,41 @@
 <template>
     <div class="flex flex-col gap-8 mx-6 md:mx-12 my-8">
-        <div class="grid grid-cols-1 lg:grid-cols-2 bg-[#258CF4]/10 rounded-lg  " v-if="!show_game_window">
-            <div
-                class="p-8 lg:p-16 flex flex-col gap-4 justify-center lg:justify-end items-center lg:items-start bg-[#15263FF]/12 rounded-l-lg">
+       <div class="bg-transparent lg:bg-[#0d0f14] h-max md:rounded-2xl flex items-center justify-center md:p-8 p-0"
+            v-if="!show_game_window">
 
-                <div class="flex flex-row gap-3 ">
-                    <div
-                        class="bg-[#258CF4]/10 rounded-3xl text-xs text-[#258CF4] font-bold py-2 px-3 border-2 border-[#258CF4]">
-                        {{ game.genre[0] }}
-                    </div>
-                    <div
-                        class="bg-[#258CF4]/10 rounded-3xl text-xs text-[#258CF4] font-bold py-2 px-3 border-2 border-[#258CF4]">
-                       {{ game.genre[1] }}
-                    </div>
+            <div
+                class="w-full max-w-2xl bg-white/5 border border-white/10 rounded-2xl px-6 py-10 md:px-12 md:py-14 flex flex-col items-center text-center backdrop-blur-sm">
+
+                <!-- Genre Tags -->
+                <div class="flex flex-wrap justify-center gap-2 mb-4 md:mb-6">
+                    <span v-for="tag in game.genre" :key="tag"
+                        class="text-[10px] md:text-xs font-semibold tracking-widest text-white/70 border border-white/20 rounded-full px-2 py-1 md:px-3 uppercase">
+                        {{ tag }}
+                    </span>
                 </div>
-                <h1 class="text-3xl md:text-5xl font-bold">{{game?.name}}</h1>
-                <p class="text-[#94A3B8] text-md md:text-xl">{{ game.year }} • {{ game.platform_name }} 
+
+                <!-- Title -->
+                <h1 class="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-2 md:mb-3 leading-tight">
+                    {{ game.name }}
+                </h1>
+
+                <!-- Meta -->
+                <p class="text-white/50 text-xs sm:text-sm font-medium mb-7 md:mb-10">
+                    {{ game.year }} &bull; {{ game.developer }} &bull; {{ game.platform_name }}
                 </p>
 
-                <p class="text-sm lg:text-lg text-[#94A3B8] text-center lg:text-justify">{{ game.additional_summary }}</p>
-                <div class="flex flex-row gap-4">
+                <!-- Actions -->
+                <div class="flex flex-row gap-3 md:gap-4">
                     <button
-                        class=" py-1 lg:py-2 px-6 lg:px-9 bg-[#258CF4] rounded-xl text-lg lg:text-xl font-bold flex flex-row gap-2 items-center"
+                        class="py-2 px-5 md:py-2 md:px-9 bg-[#258CF4] hover:bg-[#1a7de0] active:scale-95 transition-all rounded-xl text-base md:text-xl font-bold flex flex-row gap-2 items-center"
                         @click="show_game_window = true">
-                        <PhPlayCircle :size="24" weight="bold" />
+                        <PhPlayCircle :size="22" weight="bold" />
                         Play Now
                     </button>
-                    <button class=" bg-[#FFFFFF]/5 rounded-xl border-2 border-[#FFFFFF]/10 p-3 lg:p-5">
-                        <PhShareNetwork :size="24" weight="bold" />
+                    <button
+                        class="bg-[#FFFFFF]/5 hover:bg-white/10 active:scale-95 transition-all rounded-xl border-2 border-[#FFFFFF]/10 p-3 md:p-4">
+                        <PhShareNetwork :size="22" weight="bold" />
                     </button>
-                </div>
-            </div>
-            <div class="bg-[#0F172A]/40 rounded-r-lg flex justify-center items-center hidden lg:flex">
-
-                <div class="relative inline-block ">
-                    <img src="/images/nes_rom.png" alt="cartridge" class="w-[600px]" />
-                    <img :src="game.cover_url" alt="label"
-                        class="absolute top-[8%] right-[7%] w-[75%] h-[52%] object-contain" />
                 </div>
 
             </div>
@@ -59,11 +58,11 @@
                     <p class="flex flex-row gap-3 items-center  font-bold text-lg md:text-2xl">
                         <PhKeyboard :size="24" color="#258CF4" />How to Play
                     </p>
-                    <div class="grid grid-cols-4 w-full gap-x-6">
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-y-3 w-full gap-x-6">
                         <div class="flex flex-col justify-center p-4 items-center bg-[#223649] rounded-xl "
-                            v-for="(movement) in [1, 2, 3, 4]">
-                            <p class="text-xs md:text-sm font-bold text-[#94A3B8]">Movement</p>
-                            <p class="text-xs md:text-sm lg:text-xl font-bold">Arrow Keys</p>
+                            v-for="(movement) in game.movement">
+                            <p class="text-xs md:text-sm font-bold text-[#94A3B8]">{{ movement.type }}</p>
+                            <p class="text-xs md:text-sm lg:text-xl font-bold">{{ movement.keys }}</p>
                         </div>
                     </div>
                 </div>
@@ -95,19 +94,53 @@
 
             </div>
         </div>
-        <div class="flex flex-row justify-between">
+        <div class="flex flex-row justify-between w-full items-center">
             <p class="flex flex-row items-center gap-2 text-2xl font-bold">
                 <PhSparkle :size="24" color="#258CF4" />Related Games
             </p>
-            
+            <div>
+                <button class="p-2 border-white/30 border-[0.063rem] rounded-xl mr-4"
+                    @click="swiperInstance?.slidePrev()">
+                    <PhCaretLeft :size="16" weight="bold" />
+                </button>
+                <button class="p-2 border-white/30 border-[0.063rem] rounded-xl" @click="swiperInstance?.slideNext()">
+                    <PhCaretRight :size="16" weight="bold" />
+                </button>
+            </div>
+
+        </div>
+        <div class="w-dvh  ">
+
+            <Swiper :space-between="20" :loop="true" @swiper="onSwiper" :breakpoints="{
+                0: {
+                    slidesPerView: 2
+                },
+                768: {
+                    slidesPerView: 5
+                }
+            }">
+                <SwiperSlide v-for="slide in related_games" :key="slide.id">
+                    <div @click="$router.push(`/games/${slide._id}`)"
+                        class="flex cursor-pointer flex-col items-center gap-4 pb-10">
+
+                        <img :src="slide.cover_url" :alt="slide.title" class="w-full rounded-2xl object-cover h-72" />
+                    </div>
+                </SwiperSlide>
+            </Swiper>
         </div>
     </div>
 </template>
 <script setup>
-import { PhPlay, PhFileText, PhKeyboard, PhLightbulb, PhSparkle, PhPlayCircle, PhShareNetwork } from '@phosphor-icons/vue';
+import { PhPlay, PhFileText, PhKeyboard, PhLightbulb, PhSparkle, PhPlayCircle, PhShareNetwork, PhCaretLeft, PhCaretRight } from '@phosphor-icons/vue';
 import { games } from "/assets/data/games.json";
 const show_game_window = ref(false)
 const route = useRoute()
+import { Swiper, SwiperSlide } from 'swiper/vue'
+import 'swiper/css'
+const related_games = ref([])
+const swiperInstance = ref(null)
+const onSwiper = (swiper) => { swiperInstance.value = swiper }
+
 const game = ref({
     id: 1,
     title: 'CivGB Demo',
@@ -121,6 +154,7 @@ const game = ref({
 
 onMounted(() => {
     game.value = games.find(el => el._id === route.params.id)
+    related_games.value = games.filter(el => el.platform === game.value.platform && el._id !== game.value._id)
     // game.value.path = '/roms/nes/tetris.nes'
     // game.value.platform = 'gb'
 })

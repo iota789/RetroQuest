@@ -29,12 +29,12 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm ci
+        run: npm i
 
       - name: Generate static site
         run: npx nuxt generate
         env:
-          NUXT_APP_BASE_URL: /your-repo-name/  # replace with your repo name
+          NUXT_APP_BASE_URL: /gameify/  
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

@@ -42,7 +42,7 @@
         </div>
         <div v-else class="">
             <ClientOnly>
-                <Emulator :romPath="game.path" :system="game.platform" :visible="show_game_window" />
+                <Emulator :romPath="usePublicUrl(game.path)" :system="game.platform" :visible="show_game_window" />
                 <template #fallback>
                     <div class="loading">Loading emulator...</div>
                 </template>

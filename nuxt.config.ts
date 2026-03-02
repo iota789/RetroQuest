@@ -15,15 +15,17 @@ export default defineNuxtConfig({
     port: 5050
   },
   css: ["./app/assets/css/main.css"],
-  app: {
-    baseUrl:'/gameify/',
+ app: {
     head: {
-      link: [
-        {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap'
-        }
+      title: "RetroQuest",
+      script: [
+        { src: 'https://scripts.sirv.com/sirvjs/v3/sirv.js', defer: true },
       ]
-    }
-  }
+    },
+    baseURL: '/gameify/',   
+    buildAssetsDir: 'assets'
+  },
+  nitro: {
+    preset: 'github_pages'
+  },
 })

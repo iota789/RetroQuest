@@ -123,7 +123,7 @@
                     <div @click="$router.push(`/games/${slide._id}`)"
                         class="flex cursor-pointer flex-col items-center gap-4 pb-10">
 
-                        <img :src="slide.cover_url" :alt="slide.title" class="w-full rounded-2xl object-cover h-72" />
+                        <img :src="usePublicUrl(slide.cover_url)" :alt="slide.title" class="w-full rounded-2xl object-cover h-72" />
                     </div>
                 </SwiperSlide>
             </Swiper>
@@ -137,6 +137,7 @@ const show_game_window = ref(false)
 const route = useRoute()
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
+import { usePublicUrl } from '~/composables/usePublicUrl';
 const related_games = ref([])
 const swiperInstance = ref(null)
 const onSwiper = (swiper) => { swiperInstance.value = swiper }

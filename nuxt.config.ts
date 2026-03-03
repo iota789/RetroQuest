@@ -14,7 +14,7 @@ export default defineNuxtConfig({
   devServer: {
     port: 5050
   },
-  css: ["./app/assets/css/main.css"],
+  css: ["~/assets/css/main.css"],
  app: {
     head: {
       title: "RetroQuest",
@@ -22,7 +22,7 @@ export default defineNuxtConfig({
         { src: 'https://scripts.sirv.com/sirvjs/v3/sirv.js', defer: true },
       ]
     },
-    baseURL: '/gameify/',   
+    baseURL: '/gameify',   
     buildAssetsDir: 'assets'
   },
   nitro: {

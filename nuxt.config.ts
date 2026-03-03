@@ -22,10 +22,13 @@ export default defineNuxtConfig({
         { src: 'https://scripts.sirv.com/sirvjs/v3/sirv.js', defer: true },
       ]
     },
-    baseURL: '/gameify',   
-    buildAssetsDir: 'assets'
+    baseURL: '/gameify',
+    buildAssetsDir: '/gameify/_nuxt/'
   },
   nitro: {
-    preset: 'github_pages'
+    preset: 'github_pages',
+    prerender: {
+      routes: ['/'] // Ensures the index page is generated
+    }
   },
 })

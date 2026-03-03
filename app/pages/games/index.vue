@@ -73,7 +73,7 @@
             <div class="flex flex-row justify-end">
 
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-8 gap-x-4 gap-y-4">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-8 gap-x-4 gap-y-4" v-if="computed_games_list.length>0">
                 <div class="flex flex-col cursor-pointer" v-for="(game) in computed_games_list" @click="() => {
                     $router.push(`/games/${game._id}`)
                 }">
@@ -98,7 +98,10 @@
                     </div>
                 </div>
             </div>
-            <Paginator :first="skip" :rows="limit" :totalRecords="game_count"
+            <div v-if="computed_games_list.length==0" class="flex flex-row items-center justify-center">
+                <img src="/images/empty_state.png" alt="">
+            </div>
+            <Paginator v-if="computed_games_list.length>0" :first="skip" :rows="limit" :totalRecords="game_count"
             template=" PrevPageLink PageLinks NextPageLink"
             :pt="{
                 root:{

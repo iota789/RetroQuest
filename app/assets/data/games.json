@@ -657,6 +657,50 @@
             ]
         },
         {
+            "_id": "6a1f2e3b4c5d123123123b0c1d",
+            "name": "Super Mario Bros.",
+            "cover_url": "/images/game_covers/super_mario_bros.jpeg",
+            "platform": "nes",
+            "platform_name": "Nintendo Entertainment System",
+            "year": 1985,
+            "date_of_release": "October 18, 1985",
+            "developer": "Nintendo",
+            "genre": [
+                "Platformer",
+                "Action"
+            ],
+            "summary": "The game that defined a generation, Super Mario Bros. follows Mario through eight worlds of the Mushroom Kingdom to rescue Princess Peach from the villainous Bowser.",
+            "additional_summary": "Super Mario Bros. was a pack-in title with the NES in North America and is widely credited with revitalizing the video game industry after the 1983 crash.",
+            "trivia": "The clouds and bushes in the game are actually the same sprite, just recolored — a clever trick to save memory on the NES cartridge.",
+            "path": "/roms/nes/super_mario_bros.nes",
+            "movement": [
+                {
+                    "type": "Move",
+                    "keys": "Arrow Keys"
+                },
+                {
+                    "type": "Jump",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Run / Fireball",
+                    "keys": "X"
+                },
+                {
+                    "type": "Run + Jump",
+                    "keys": "X + Z"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select",
+                    "keys": "Shift"
+                }
+            ]
+        },
+        {
             "_id": "6a1f2e3b4c5d6e7f8a9b0c1d",
             "name": "Sonic the Hedgehog",
             "year": 1991,

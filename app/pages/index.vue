@@ -5,7 +5,7 @@
             <div class="flex flex-col gap-6 order-2 lg:order-1">
                 <div
                     class="bg-[#258CF4]/10 w-fit p-2 border-[0.063rem] border-[#258CF4]/10 rounded-full text-sm text-[#258CF4] font-bold">
-                    🕹️ PLAYER 1 READY
+                    🕹️ PLAYER ONE READY
                 </div>
                 <h1 class="font-bold text-5xl md:text-7xl">Relive the <span
                         class="bg-gradient-to-r from-[#258CF4] via-[#A855F7]  to-[#2DD4BF] bg-clip-text text-transparent">Golden

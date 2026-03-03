@@ -51,7 +51,7 @@
                 }">
                     <SwiperSlide v-for="slide in games" :key="slide.id">
                         <div class="flex flex-col items-center gap-4 pb-10">
-                            <img :src="slide.cover_url" :alt="slide.title"
+                            <img :src="usePublicUrl(slide.cover_url)" :alt="slide.title"
                                 class="w-full rounded-2xl object-cover h-72" />
                         </div>
                     </SwiperSlide>
@@ -102,7 +102,7 @@ import { PhArrowRight, PhCloudCheck, PhLightning, PhGameController, PhCheckCircl
 import { Autoplay } from 'swiper/modules'
 
 import 'swiper/css'
-
+import { usePublicUrl } from '~/composables/usePublicUrl';
 const modules = [Autoplay]
 const random_id = ref('')
 const selectedPlatform = ref("nes");

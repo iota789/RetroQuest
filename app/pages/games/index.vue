@@ -87,7 +87,7 @@
                             class="absolute top-3 left-3 backdrop-blur-sm text-white text-[10px] py-1 rounded font-bold ">
                             {{ game.platform_name }}
                         </div>
-                        <img :src="game.cover_url" alt="" class="rounded-xl h-[256px] aspect-square">
+                        <img :src="usePublicUrl(game.cover_url)" alt="" class="rounded-xl h-[256px] aspect-square">
                     </div>
                     <div class="mt-2">
 
@@ -161,6 +161,7 @@ import Paginator from 'primevue/paginator';
 import { platforms } from "/assets/data/platforms.json";
 import { games } from "/assets/data/games.json";
 import { PhGridFour, PhMagnifyingGlass,PhFunnelSimple } from '@phosphor-icons/vue';
+import { usePublicUrl } from '~/composables/usePublicUrl';
 const filter_visible = ref(false)
 const page = ref(1)
 const game_count = ref(0)

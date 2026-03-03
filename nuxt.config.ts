@@ -33,8 +33,8 @@ export default defineNuxtConfig({
     
     // 2. DO NOT include the repo name here. 
     // This is relative to the baseURL. Standard is '_nuxt'
-    buildAssetsDir: '_nuxt', 
-
+    // buildAssetsDir: '_nuxt', 
+// 
     head: {
       title: "RetroQuest",
       script: [

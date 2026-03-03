@@ -34,7 +34,7 @@ jobs:
       - name: Generate static site
         run: npx nuxt generate
         env:
-          NUXT_APP_BASE_URL: /gameify/  
+          NUXT_APP_BASE_URL: /RetroQuest/  
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

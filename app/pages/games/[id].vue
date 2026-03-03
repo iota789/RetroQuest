@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col gap-8 mx-6 md:mx-12 my-8">
+    <div class="flex flex-col gap-8 mx-3 md:mx-12 my-8">
        <div class="bg-transparent lg:bg-[#0d0f14] h-max md:rounded-2xl flex items-center justify-center md:p-8 p-0"
             v-if="!show_game_window">
 
@@ -54,12 +54,12 @@
                     <PhFileText :size="24" color="#258CF4" />About Game
                 </p>
                 <p class="md:text-md lg:text-lg text-[#CBD5E1] text-justify">{{ game.summary }}</p>
-                <div class="bg-[#1A2632] h-38 w-full p-6 flex flex-col gap-6 rounded-lg border-2 border-[#223649]">
+                <div class="bg-[#1A2632] h-38 w-full p-2 md:p-6 flex flex-col gap-6 rounded-lg border-2 border-[#223649]">
                     <p class="flex flex-row gap-3 items-center  font-bold text-lg md:text-2xl">
                         <PhKeyboard :size="24" color="#258CF4" />How to Play
                     </p>
-                    <div class="grid grid-cols-2 md:grid-cols-3 gap-y-3 w-full gap-x-6">
-                        <div class="flex flex-col justify-center p-4 items-center bg-[#223649] rounded-xl "
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-y-3 w-full gap-x-2 md:gap-x-6">
+                        <div class="flex flex-col justify-center p-2 md:p-4 items-center bg-[#223649] rounded-xl "
                             v-for="(movement) in game.movement">
                             <p class="text-xs md:text-sm font-bold text-[#94A3B8]">{{ movement.type }}</p>
                             <p class="text-xs md:text-sm lg:text-xl font-bold">{{ movement.keys }}</p>
@@ -123,7 +123,7 @@
                     <div @click="$router.push(`/games/${slide._id}`)"
                         class="flex cursor-pointer flex-col items-center gap-4 pb-10">
 
-                        <img :src="usePublicUrl(slide.cover_url)" :alt="slide.title" class="w-full rounded-2xl object-cover h-72" />
+                        <img :src="usePublicUrl(slide.cover_url)" :alt="slide.title" class="w-full rounded-2xl object-cover h-auto md:h-72" />
                     </div>
                 </SwiperSlide>
             </Swiper>

@@ -71,7 +71,7 @@
                
             </div>
             <div class="flex flex-row justify-end">
-                
+
             </div>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-8 gap-x-4 gap-y-4">
                 <div class="flex flex-col cursor-pointer" v-for="(game) in computed_games_list" @click="() => {
@@ -84,14 +84,14 @@
                             'bg-green-500': game.platform_name == 'Game Boy Advance',
                             'bg-blue-500': game.platform_name == 'Sega Genesis'
                         }"
-                            class="absolute top-3 left-3 backdrop-blur-sm text-white text-[10px] py-1 rounded font-bold ">
+                            class="absolute top-3 left-3 backdrop-blur-sm text-white text-[10px] py-1 rounded font-bold px-2">
                             {{ game.platform_name }}
                         </div>
-                        <img :src="usePublicUrl(game.cover_url)" alt="" class="rounded-xl h-[256px] aspect-square">
+                        <img :src="usePublicUrl(game.cover_url)" alt="" class="rounded-xl h-auto md:h-[256px] aspect-square">
                     </div>
                     <div class="mt-2">
 
-                        <p class="text-lg font-bold">{{ game.name }}</p>
+                        <p class=" text-sm md:text-lg font-bold">{{ game.name }}</p>
                         <p class="text-[#64748B] text-sm font-normal">{{ game?.genre[0] }} • {{ game?.genre[1] }} • {{
                             game.year }}
                         </p>
@@ -99,6 +99,7 @@
                 </div>
             </div>
             <Paginator :first="skip" :rows="limit" :totalRecords="game_count"
+            template=" PrevPageLink PageLinks NextPageLink"
             :pt="{
                 root:{
                     class:'bg-transparent'

@@ -1,7 +1,7 @@
 <template>
 
-    <div class="flex flex-col gap-8 items-center py-24  retro-grid">
-        <div class="grid grid-cols-1 lg:grid-cols-2 items-center w-full px-4 md:px-8 ">
+    <div class="flex flex-col gap-8 items-center py-12 md:py-24  retro-grid">
+        <div class="grid grid-cols-1 lg:grid-cols-2 items-center w-full px-3 md:px-8 ">
             <div class="flex flex-col gap-6 order-2 lg:order-1">
                 <div
                     class="bg-[#258CF4]/10 w-fit p-2 border-[0.063rem] border-[#258CF4]/10 rounded-full text-sm text-[#258CF4] font-bold">
@@ -12,7 +12,7 @@
                         Age</span> of Gaming</h1>
                 <p class=" text-md md:text-xl font-normal text-[#94A3B8]">Browser-based retro gaming with save states,
                     controller support, and a growing library of timeless titles.</p>
-                <div class="flex flex-row gap-4">
+                <div class="flex flex-col md:flex-row gap-4">
                     <NuxtLink :to="`/games/${random_id}`">
                         <button class="bg-[#258CF4] px-8 py-3 rounded-md font-bold flex flex-row gap-2 items-center">
                             <PhPlayCircle :size="22" weight="bold" />
@@ -25,7 +25,7 @@
                         </button>
                     </NuxtLink>
                 </div>
-                <div class="flex flex-row gap-4 items-center">
+                <div class="flex flex-col md:flex-row gap-2 md:gap-4 items-start md:items-center">
                     <p class="flex flex-row gap-2 items-center">
                         <PhCheckCircle :size="20" color="#2DD4BF"></PhCheckCircle>100% Free
                     </p>
@@ -59,7 +59,7 @@
             </div>
         </div>
     </div>
-    <div class="grid grid-cols-1 lg:grid-cols-3 px-4 md:px-8 gap-y-10 lg:gap-x-10 py-24">
+    <div class="grid grid-cols-1 lg:grid-cols-3 px-3 md:px-8 gap-y-10 lg:gap-x-10 py-12 md:py-24">
         <div class="flex flex-col gap-4 items-center justify-center">
             <div
                 class="bg-[#258CF4]/10 w-16 h-16 flex items-center justify-center rounded-lg border-2 border-[#258CF4]/20">

@@ -2,7 +2,6 @@
 import Aura from '@primeuix/themes/aura';
 
 export default defineNuxtConfig({
-  // Nuxt 4 Compatibility
   future: {
     compatibilityVersion: 4,
   },
@@ -23,18 +22,12 @@ export default defineNuxtConfig({
   devServer: {
     port: 5050
   },
-
-  // In Nuxt 4, ~ points to the /app directory by default
   css: ["~/assets/css/main.css"],
 
   app: {
-    // 1. Ensure leading and trailing slashes for the subpath
-    baseURL: '/gameify/', 
-    
-    // 2. DO NOT include the repo name here. 
-    // This is relative to the baseURL. Standard is '_nuxt'
-    // buildAssetsDir: '_nuxt', 
-// 
+
+    baseURL: '/RetroQuest/', 
+  
     head: {
       title: "RetroQuest",
       script: [
@@ -45,7 +38,6 @@ export default defineNuxtConfig({
 
   nitro: {
     preset: 'github_pages',
-    // Ensures the static index.html is created during build
     prerender: {
       routes: ['/']
     }

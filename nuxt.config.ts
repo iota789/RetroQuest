@@ -30,6 +30,9 @@ export default defineNuxtConfig({
   
     head: {
       title: "RetroQuest",
+       link: [
+        { rel: "icon", type: "image/png", href: "/RetroQuest/logo.png" }
+      ],
       script: [
         { src: 'https://scripts.sirv.com/sirvjs/v3/sirv.js', defer: true },
       ]

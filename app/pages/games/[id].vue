@@ -25,17 +25,14 @@
                 </p>
 
                 <!-- Actions -->
-                <div class="flex flex-row gap-3 md:gap-4">
+                <div class="flex flex-row justify-center  gap-3 md:gap-4">
                     <button
                         class="py-2 px-5 md:py-2 md:px-9 bg-[#258CF4] hover:bg-[#1a7de0] active:scale-95 transition-all rounded-xl text-base md:text-xl font-bold flex flex-row gap-2 items-center"
                         @click="show_game_window = true">
                         <PhPlayCircle :size="22" weight="bold" />
                         Play Now
                     </button>
-                    <button
-                        class="bg-[#FFFFFF]/5 hover:bg-white/10 active:scale-95 transition-all rounded-xl border-2 border-[#FFFFFF]/10 p-3 md:p-4">
-                        <PhShareNetwork :size="22" weight="bold" />
-                    </button>
+                   
                 </div>
 
             </div>
@@ -152,6 +149,8 @@ const game = ref({
     year: 2024,
     description: 'The classic Nintendo platformer'
 })
+
+
 
 onMounted(() => {
     game.value = games.find(el => el._id === route.params.id)

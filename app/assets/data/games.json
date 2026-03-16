@@ -613,6 +613,50 @@
             ]
         },
         {
+            "_id": "7b2e3f4c5d6e789789789c1d2e",
+            "name": "Mega Bomberman",
+            "cover_url": "/images/game_covers/mega_bomberman.jpeg",
+            "platform": "segaMD",
+            "platform_name": "Sega Mega Drive",
+            "year": 1994,
+            "date_of_release": "September 1, 1994",
+            "developer": "Hudson Soft",
+            "genre": [
+                "Action",
+                "Maze"
+            ],
+            "summary": "Mega Bomberman brings the beloved franchise to the Sega Mega Drive, challenging players to strategically plant bombs, clear enemies, and battle friends in explosive multiplayer mayhem.",
+            "additional_summary": "Mega Bomberman was one of the standout multiplayer titles on the Mega Drive, supporting up to 5 players with the Sega Multitap. Its Battle Mode became legendary at gatherings and is considered one of the best party games on the platform.",
+            "trivia": "The game supports up to 5 players simultaneously using the 4-Way Play / Multitap accessory — a rare feature for its time that made it a go-to couch multiplayer experience.",
+            "path": "/roms/segaMD/mega_bomberman.md",
+            "movement": [
+                {
+                    "type": "Move",
+                    "keys": "Arrow Keys"
+                },
+                {
+                    "type": "Place Bomb",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Special / Power-Up Action",
+                    "keys": "X"
+                },
+                {
+                    "type": "Kick Bomb",
+                    "keys": "C"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select",
+                    "keys": "Shift"
+                }
+            ]
+        },
+        {
             "_id": "206",
             "name": "Kirby's Adventure",
             "cover_url": "/images/game_covers/kirby's_adventure.jpeg",

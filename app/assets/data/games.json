@@ -1995,6 +1995,138 @@
                     "keys": "Shift"
                 }
             ]
+        },
+        {
+            "_id": "302",
+            "name": "Adventure Island",
+            "cover_url": "/images/game_covers/adventure_island.jpeg",
+            "platform": "gb",
+            "platform_name": "Game Boy",
+            "year": 1992,
+            "date_of_release": "February 1992",
+            "developer": "Now Production",
+            "genre": [
+                "Platformer",
+                "Action"
+            ],
+            "summary": "A portable entry in the Adventure Island series, following Master Higgins as he skateboards across a tropical archipelago to rescue his girlfriend Tina from an evil wizard. Armed with a trusty stone axe and a variety of power-up items, players must race against a constantly depleting hunger meter while collecting fruit, avoiding prehistoric hazards, and battling bosses at the end of each island.",
+            "additional_summary": "Based on Adventure Island II, this Game Boy release condenses the fast-paced, egg-hatching, dinosaur-riding action of the NES series into a bite-sized handheld package while keeping its unforgiving difficulty intact.",
+            "trivia": "Master Higgins was originally created as a tie-in to the arcade game Wonder Boy, which Hudson Soft could not officially license, leading to the creation of an original mascot instead.",
+            "path": "/roms/nes/adventure_island.gb",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Crouch",
+                    "keys": "Arrow Down"
+                },
+                {
+                    "type": "Jump",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Throw Axe / Use Item",
+                    "keys": "X"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select",
+                    "keys": "Shift"
+                }
+            ]
+        },
+        {
+            "_id": "303",
+            "name": "Adventure Island II",
+            "cover_url": "/images/game_covers/adventure_island_2.jpeg",
+            "platform": "nes",
+            "platform_name": "Nintendo Entertainment System",
+            "year": 1991,
+            "date_of_release": "May 31, 1991",
+            "developer": "Now Production",
+            "genre": [
+                "Platformer",
+                "Action"
+            ],
+            "summary": "Master Higgins returns for a second tropical rescue mission, this time saving Princess Tina from the clutches of the evil witch doctor. Riding dinosaurs hatched from eggs found across each stage and wielding his signature stone axe, Higgins must race across island, cave, and ice levels before his hunger meter runs out, all while collecting hidden cards that grant bonus lives and power-ups.",
+            "additional_summary": "Adventure Island II expands on the original with dinosaur mounts that grant unique abilities, a card and roulette bonus system, and noticeably tighter, more forgiving platforming than its predecessor.",
+            "trivia": "The Game Boy port released the following year was rebranded simply as Adventure Island outside Japan, causing lasting confusion with the original NES game of the same Western title.",
+            "path": "/roms/nes/adventure_island_2.nes",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Crouch",
+                    "keys": "Arrow Down"
+                },
+                {
+                    "type": "Jump",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Throw Axe / Use Item",
+                    "keys": "X"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select",
+                    "keys": "Shift"
+                }
+            ]
+        },
+        {
+            "_id": "304",
+            "name": "Adventure Island",
+            "cover_url": "/images/game_covers/adventure_island.jpeg",
+            "platform": "nes",
+            "platform_name": "Nintendo Entertainment System",
+            "year": 1986,
+            "date_of_release": "September 12, 1986",
+            "developer": "Hudson Soft",
+            "genre": [
+                "Platformer",
+                "Action"
+            ],
+            "summary": "The original tropical platforming adventure that introduced Master Higgins, who must skateboard, jump, and axe-throw his way across eight islands to rescue Princess Tina from the clutches of an evil witch doctor. A relentless hunger meter forces players to keep moving and collecting fruit, while hidden vehicles like skateboards and rock-hopping shoes offer brief bursts of speed and protection.",
+            "additional_summary": "Adventure Island began life as a licensed port of Sega's arcade hit Wonder Boy, but after rights issues, Hudson Soft reworked it into an original title starring a hero modeled on its own spokesman, Takahashi Meijin.",
+            "trivia": "The game is notorious for its punishing difficulty and one-hit-kill hazards, cementing its reputation as one of the toughest platformers on the NES.",
+            "path": "/roms/nes/adventure_island.nes",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Crouch",
+                    "keys": "Arrow Down"
+                },
+                {
+                    "type": "Jump",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Throw Axe / Use Item",
+                    "keys": "X"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select",
+                    "keys": "Shift"
+                }
+            ]
         }
     ]
 }

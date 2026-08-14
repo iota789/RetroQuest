@@ -49,7 +49,7 @@
                         slidesPerView: 3
                     }
                 }">
-                    <SwiperSlide v-for="slide in games" :key="slide.id">
+                    <SwiperSlide v-for="slide in sorted_games" :key="slide.id">
                         <div class="flex flex-col items-center gap-4 pb-10">
                             <img :src="usePublicUrl(slide.cover_url)" :alt="slide.title"
                                 class="w-full rounded-2xl object-cover h-72" />
@@ -106,6 +106,7 @@ import { usePublicUrl } from '~/composables/usePublicUrl';
 const modules = [Autoplay]
 const random_id = ref('')
 const selectedPlatform = ref("nes");
+const sorted_games = computed(() => [...games].sort((a, b) => a.name.localeCompare(b.name)))
 onMounted(() => {
     random_id.value = games[Math.floor(Math.random() * games.length)]._id
 })

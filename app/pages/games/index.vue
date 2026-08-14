@@ -185,9 +185,9 @@ const filterState = ref({
 })
 
 const computed_games_list = computed(() => {
-    let games_list = games;
+    let games_list = [...games].sort((a, b) => a.name.localeCompare(b.name));
     if (filterState.value.search_text != '') {
-        games_list = games.filter(game => game.name.toLowerCase().includes(filterState.value.search_text.toLowerCase()))
+        games_list = games_list.filter(game => game.name.toLowerCase().includes(filterState.value.search_text.toLowerCase()))
     }
     if (filterState.value.selected_genre != '') {
         games_list = games_list.filter(game => game.genre.includes(filterState.value.selected_genre))

@@ -154,7 +154,9 @@ const game = ref({
 
 onMounted(() => {
     game.value = games.find(el => el._id === route.params.id)
-    related_games.value = games.filter(el => el.platform === game.value.platform && el._id !== game.value._id)
+    related_games.value = games
+        .filter(el => el.platform === game.value.platform && el._id !== game.value._id)
+        .sort((a, b) => a.name.localeCompare(b.name))
     // game.value.path = '/roms/nes/tetris.nes'
     // game.value.platform = 'gb'
 })

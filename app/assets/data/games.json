@@ -2127,6 +2127,68 @@
                     "keys": "Shift"
                 }
             ]
+        },
+        {
+            "_id": "41b3844f-60dc-4cfe-96b6-3182deb4e376",
+            "name": "Super Mario World 2",
+            "cover_url": "/images/game_covers/image.png",
+            "platform": "nes",
+            "platform_name": "Nintendo Entertainment System",
+            "year": 1992,
+            "date_of_release": "asd",
+            "developer": "Nintendo",
+            "genre": [
+                "Platformer"
+            ],
+            "summary": "Super Mario World 2 - Yoshi's Island (V1.1) ROM Download for Super Nintendo (SNES). Super Mario World 2 - Yoshi's Island (V1.1) game is available to play online and download only on Roms Games. Super Mario World 2 - Yoshi's Island (V1.1) ROM for Super Nintendo download requires an emulator to play the game offline. This Game is English (USA) Version and is the highest quality available.",
+            "additional_summary": "asdasd",
+            "trivia": "asdasda",
+            "path": "/roms/nes/Super_Mario_World_2_-_Yoshi_s_Island__U___V1.1__1_.smc",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Jump",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                }
+            ]
+        },
+        {
+            "_id": "d4883602-49a9-4195-8288-1f9e014f5ac3",
+            "name": "Excite Bike",
+            "cover_url": "/images/game_covers/image.jpeg",
+            "platform": "nes",
+            "platform_name": "Nintendo Entertainment System",
+            "year": 1984,
+            "date_of_release": "April 23,1984",
+            "developer": "Famicom Disk System",
+            "genre": [
+                "Racing"
+            ],
+            "summary": "Excitebike is a 1984 racing video game developed and published by Nintendo for the Nintendo Entertainment System. It was ported to arcades for the Nintendo VS. System later that year and Famicom Disk System in 1988. In North America, it became one of the best-selling games on the console.",
+            "additional_summary": "Contradicting this formula, Excitebike 64 was considered by many to be the most realistic motocross game of all time when it was released years ago.",
+            "trivia": "The original Excitebike has been remade various times for a multitude of consoles including Hudson Soft's NEX PC-8801, the Nintendo 64 (an unlockable game for Excitebike 64), the GameCube(an unlockable title with Animal Crossing, the Game Boy Advance (with both the NES Classics series and the e-Reader), and the Wii's Virtual Console.",
+            "path": "/roms/nes/Excitebike__Japan__USA__1_.nes",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Jump",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                }
+            ]
         }
     ]
 }

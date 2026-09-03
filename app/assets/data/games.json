@@ -2189,6 +2189,37 @@
                     "keys": "Enter"
                 }
             ]
+        },
+        {
+            "_id": "cadf71c8-6573-4deb-9948-36c493c9a0b1",
+            "name": "1200 in 1",
+            "cover_url": "/images/game_covers/image__1_.jpg",
+            "platform": "nes",
+            "platform_name": "Nintendo Entertainment System",
+            "year": 1111,
+            "date_of_release": "11221",
+            "developer": "1212",
+            "genre": [
+                "1212"
+            ],
+            "summary": "1212",
+            "additional_summary": "121",
+            "trivia": "2121",
+            "path": "/roms/nes/1200-in-1__J___p1__1_.nes",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Jump",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                }
+            ]
         }
     ]
 }

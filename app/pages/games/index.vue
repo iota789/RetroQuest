@@ -92,7 +92,7 @@
                             'bg-blue-500': game.platform_name == 'Sega Genesis'
                         }"
                             class="absolute top-3 left-3 backdrop-blur-sm text-white text-[10px] py-1 rounded font-bold px-2">
-                            {{ game.platform_name }}
+                            {{ usePlatformShortName(game.platform) }}
                         </div>
                         <img :src="usePublicUrl(game.cover_url)" alt="" class="rounded-xl h-[256px] aspect-square">
                     </div>
@@ -171,6 +171,7 @@ import { platforms } from "/assets/data/platforms.json";
 import { games } from "/assets/data/games.json";
 import { PhGridFour, PhMagnifyingGlass, PhFunnelSimple } from '@phosphor-icons/vue';
 import { usePublicUrl } from '~/composables/usePublicUrl';
+import { usePlatformShortName } from '~/composables/usePlatformShortName';
 import { filter } from '@primeuix/themes/aura/datatable';
 const filter_visible = ref(false)
 const page = ref(1)

@@ -1,19 +1,10 @@
 <template>
     <div class="max-w-3xl mx-auto my-8 mx-3 lg:mx-auto px-3">
-        <div v-if="!authed" class="flex flex-col gap-4 max-w-sm mx-auto mt-24">
-            <p class="text-2xl font-bold">Admin Access</p>
-            <input v-model="admin_key" type="password" placeholder="Admin key" @keyup.enter="checkKey"
-                class="rounded-lg bg-[#1E293B] text-white py-2 px-4 text-sm outline-none focus:ring-2 focus:ring-[#258CF4]/30" />
-            <p v-if="auth_error" class="text-red-400 text-sm">{{ auth_error }}</p>
-            <button class="bg-[#258CF4] px-6 py-2 rounded-md font-bold disabled:opacity-50" :disabled="checking_key"
-                @click="checkKey">
-                {{ checking_key ? 'Checking...' : 'Continue' }}
-            </button>
-        </div>
-
-        <div v-else class="flex flex-col gap-6 py-8">
+        <AdminAuthGate>
+        <div class="flex flex-col gap-6 py-8">
             <div>
-                <p class="text-3xl font-bold">Add a Game</p>
+                <NuxtLink to="/admin" class="text-sm font-bold text-[#258CF4]">&larr; Back to Games</NuxtLink>
+                <p class="text-3xl font-bold mt-2">Add a Game</p>
                 <p class="text-sm text-[#94A3B8] mt-2">Upload a ROM and fill in the game's details. This writes
                     directly to games.json and public/roms — only works while running the dev server.</p>
             </div>
@@ -94,36 +85,15 @@
                 </button>
             </form>
         </div>
+        </AdminAuthGate>
     </div>
 </template>
 
 <script setup>
 import { platforms } from "/assets/data/platforms.json";
+import { useAdminAuth } from '~/composables/useAdminAuth'
 
-const admin_key = ref('')
-const authed = ref(false)
-const checking_key = ref(false)
-const auth_error = ref('')
-
-const checkKey = async () => {
-    auth_error.value = ''
-    if (!admin_key.value) {
-        auth_error.value = 'Please enter an admin key.'
-        return
-    }
-    checking_key.value = true
-    try {
-        await $fetch('/api/admin/verify-key', {
-            method: 'POST',
-            headers: { 'x-admin-key': admin_key.value },
-        })
-        authed.value = true
-    } catch (e) {
-        auth_error.value = e?.data?.statusMessage || 'Invalid admin key.'
-    } finally {
-        checking_key.value = false
-    }
-}
+const { admin_key } = useAdminAuth()
 
 const submitting = ref(false)
 const error = ref('')

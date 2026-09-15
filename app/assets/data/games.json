@@ -2130,32 +2130,49 @@
         },
         {
             "_id": "41b3844f-60dc-4cfe-96b6-3182deb4e376",
-            "name": "Super Mario World 2",
+            "name": "Super Mario World 2: Yoshi's Island",
             "cover_url": "/images/game_covers/image.png",
-            "platform": "nes",
-            "platform_name": "Nintendo Entertainment System",
-            "year": 1992,
-            "date_of_release": "asd",
-            "developer": "Nintendo",
+            "platform": "snes",
+            "platform_name": "Super Nintendo Entertainment System",
+            "year": 1995,
+            "date_of_release": "October 4, 1995",
+            "developer": "Nintendo EAD",
             "genre": [
-                "Platformer"
+                "Platformer",
+                "Action"
             ],
-            "summary": "Super Mario World 2 - Yoshi's Island (V1.1) ROM Download for Super Nintendo (SNES). Super Mario World 2 - Yoshi's Island (V1.1) game is available to play online and download only on Roms Games. Super Mario World 2 - Yoshi's Island (V1.1) ROM for Super Nintendo download requires an emulator to play the game offline. This Game is English (USA) Version and is the highest quality available.",
-            "additional_summary": "asdasd",
-            "trivia": "asdasda",
-            "path": "/roms/nes/Super_Mario_World_2_-_Yoshi_s_Island__U___V1.1__1_.smc",
+            "summary": "A visually distinctive prequel starring Yoshi, who must carry baby Mario on his back across seven worlds after Kamek's Magikoopas scatter him and kidnap baby Luigi. Yoshi can flutter jump, gobble up enemies to lay eggs, and lob those eggs with pinpoint precision to solve puzzles and clear obstacles, while losing Mario sends him scrambling on a timer to catch back up before losing a life.",
+            "additional_summary": "Known for its hand-drawn, crayon-and-watercolor art style achieved through the Super FX 2 chip, Yoshi's Island was a technical showcase for the SNES late in its life cycle and is frequently cited as one of the best platformers of the 16-bit era.",
+            "trivia": "This was the final major Mario platformer released for the SNES and the first to use the enhanced Super FX 2 chip. It also marked Baby Mario's first appearance and introduced Yoshi as a standalone protagonist.",
+            "path": "/roms/snes/Super_Mario_World_2_-_Yoshi_s_Island__U___V1.1__1_.smc",
             "movement": [
                 {
                     "type": "Move Left / Right",
                     "keys": "Arrow Left / Right"
                 },
                 {
-                    "type": "Jump",
+                    "type": "Crouch / Ground Pound",
+                    "keys": "Arrow Down"
+                },
+                {
+                    "type": "Jump / Flutter Jump (hold)",
                     "keys": "Z"
+                },
+                {
+                    "type": "Swallow Enemy / Spit Egg",
+                    "keys": "X"
+                },
+                {
+                    "type": "Aim Egg Reticle",
+                    "keys": "Arrow Keys (while holding egg)"
                 },
                 {
                     "type": "Start / Pause",
                     "keys": "Enter"
+                },
+                {
+                    "type": "Select",
+                    "keys": "Shift"
                 }
             ]
         },
@@ -2167,22 +2184,34 @@
             "platform_name": "Nintendo Entertainment System",
             "year": 1984,
             "date_of_release": "April 23,1984",
-            "developer": "Famicom Disk System",
+            "developer": "Nintendo R&D1",
             "genre": [
                 "Racing"
             ],
-            "summary": "Excitebike is a 1984 racing video game developed and published by Nintendo for the Nintendo Entertainment System. It was ported to arcades for the Nintendo VS. System later that year and Famicom Disk System in 1988. In North America, it became one of the best-selling games on the console.",
-            "additional_summary": "Contradicting this formula, Excitebike 64 was considered by many to be the most realistic motocross game of all time when it was released years ago.",
-            "trivia": "The original Excitebike has been remade various times for a multitude of consoles including Hudson Soft's NEX PC-8801, the Nintendo 64 (an unlockable game for Excitebike 64), the GameCube(an unlockable title with Animal Crossing, the Game Boy Advance (with both the NES Classics series and the e-Reader), and the Wii's Virtual Console.",
+            "summary": "Excitebike is a 1984 racing video game developed and published by Nintendo for the Nintendo Entertainment System. It was ported to arcades for the Nintendo VS. System later that year and to the Famicom Disk System in 1988. In North America, it became one of the best-selling games on the console.",
+            "additional_summary": "Excitebike introduced a track editor letting players design and save their own courses to the Famicom Disk System, a feature years ahead of its time that later inspired the level-editing mode in Excitebike 64.",
+            "trivia": "The original Excitebike has been remade or re-released for a multitude of platforms, including the Nintendo 64 (as an unlockable game in Excitebike 64), the GameCube (an unlockable title via Animal Crossing), the Game Boy Advance (via the NES Classics series and the e-Reader), and the Wii, 3DS, and Wii U Virtual Console.",
             "path": "/roms/nes/Excitebike__Japan__USA__1_.nes",
             "movement": [
                 {
-                    "type": "Move Left / Right",
-                    "keys": "Arrow Left / Right"
+                    "type": "Accelerate",
+                    "keys": "Z"
                 },
                 {
-                    "type": "Jump",
-                    "keys": "Z"
+                    "type": "Turbo Boost (overheats engine)",
+                    "keys": "X"
+                },
+                {
+                    "type": "Lean Forward / Wheelie",
+                    "keys": "Arrow Up"
+                },
+                {
+                    "type": "Lean Back",
+                    "keys": "Arrow Down"
+                },
+                {
+                    "type": "Steer Left / Right",
+                    "keys": "Arrow Left / Right"
                 },
                 {
                     "type": "Start / Pause",
@@ -2196,15 +2225,16 @@
             "cover_url": "/images/game_covers/image__1_.jpg",
             "platform": "nes",
             "platform_name": "Nintendo Entertainment System",
-            "year": 1111,
-            "date_of_release": "11221",
-            "developer": "1212",
+            "year": 2003,
+            "date_of_release": "Unknown (unlicensed release)",
+            "developer": "Unlicensed / Various (Bootleg Multicart)",
             "genre": [
-                "1212"
+                "Compilation",
+                "Multicart"
             ],
-            "summary": "1212",
-            "additional_summary": "121",
-            "trivia": "2121",
+            "summary": "1200 in 1 is an unlicensed Famiclone multicart cartridge that packs a large library of pirated NES/Famicom games — from Contra and Tetris to countless minor shovelware titles — behind a single menu screen, despite the '1200' in its name being a marketing exaggeration rather than an accurate count of unique games.",
+            "additional_summary": "Common at flea markets and budget electronics stores in the 2000s, these bootleg carts reuse the same handful of ROM dumps under many different menu entries, padding out the advertised game count with duplicates and reskinned clones.",
+            "trivia": "The in-game menu is notorious for garbled, mistranslated titles — such as 'CHINESE CHESE', 'CIRCUSE', 'ROADFG', and 'ASUIT SALON' — the result of unofficial Chinese Famiclone manufacturers hastily relabeling games without official licensing or proofreading.",
             "path": "/roms/nes/1200-in-1__J___p1__1_.nes",
             "movement": [
                 {
@@ -2218,6 +2248,50 @@
                 {
                     "type": "Start / Pause",
                     "keys": "Enter"
+                }
+            ]
+        },
+        {
+            "_id": "012678aa-a80d-4ac5-843b-20a8d0b56826",
+            "name": "Super Mario All-Stars + Super Mario World",
+            "cover_url": "/images/game_covers/image__2_.jpg",
+            "platform": "snes",
+            "platform_name": "Super Nintendo Entertainment System",
+            "year": 1994,
+            "date_of_release": "October 1994",
+            "developer": "Nintendo",
+            "genre": [
+                "Platformer",
+                "Action"
+            ],
+            "summary": "A value-priced reissue cartridge that bundles Super Mario All-Stars — the 16-bit remakes of Super Mario Bros., Super Mario Bros.: The Lost Levels, Super Mario Bros. 2, and Super Mario Bros. 3 — together with Super Mario World on a single SNES cartridge, letting players relive the entire NES Mario trilogy with remastered graphics and sound alongside the SNES launch classic.",
+            "additional_summary": "Originally released separately in 1993, Super Mario All-Stars was repackaged with Super Mario World in 1994 as a budget combo cartridge, giving newcomers to the SNES an easy way to catch up on the series' NES-era history in one purchase.",
+            "trivia": "The Super Mario Bros. 2 included in this compilation is the Western version built from Doki Doki Panic, not the original Japanese Super Mario Bros. 2, which was considered too difficult for international release.",
+            "path": "/roms/snes/Super_Mario_All-Stars___Super_Mario_World__USA_.sfc",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Crouch / Slide",
+                    "keys": "Arrow Down"
+                },
+                {
+                    "type": "Jump / Fly (Cape / Tanooki)",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Run / Fireball / Carry",
+                    "keys": "X"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select",
+                    "keys": "Shift"
                 }
             ]
         }

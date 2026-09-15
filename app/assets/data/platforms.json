@@ -26,5 +26,12 @@
         "value": "segaMD",
         "image_url":"/images/sega.png",
         "banner_url":""
+    },
+    {
+        "_id":"5",
+        "name": "Super Nintendo",
+        "value": "snes",
+        "image_url":"",
+        "banner_url":""
     }
 ]}

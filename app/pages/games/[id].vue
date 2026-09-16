@@ -37,100 +37,112 @@
 
             </div>
         </div>
-        <div v-else class="">
-            <ClientOnly>
-                <Emulator :romPath="usePublicUrl(game.path)" :system="game.platform" :visible="show_game_window" />
-                <template #fallback>
-                    <div class="loading">Loading emulator...</div>
-                </template>
-            </ClientOnly>
+        <div v-else class="relative">
+            <button @click="focus_mode = !focus_mode" title="Toggle focus mode"
+                class="absolute top-3 right-3 z-20 p-2 rounded-full transition-all duration-300"
+                :class="focus_mode ? 'bg-[#258CF4] text-white shadow-[0_0_20px_4px_rgba(37,140,244,0.6)]' : 'bg-black/40 text-white/70 hover:bg-black/60 hover:text-white'">
+                <PhLightbulbFilament :size="20" :weight="focus_mode ? 'fill' : 'regular'" />
+            </button>
+            <div class="transition-all duration-300 rounded-2xl"
+                :class="focus_mode ? 'ring-2 ring-[#258CF4]/60 shadow-[0_0_80px_20px_rgba(37,140,244,0.25)]' : ''">
+                <ClientOnly>
+                    <Emulator :romPath="usePublicUrl(game.path)" :system="game.platform" :visible="show_game_window" />
+                    <template #fallback>
+                        <div class="loading">Loading emulator...</div>
+                    </template>
+                </ClientOnly>
+            </div>
         </div>
-        <div class="grid grid-cols-1 lg:grid-cols-[3fr_1fr] gap-y-3 lg:gap-x-8">
-            <div class="flex flex-col gap-4 lg:gap-10">
-                <p class="flex flex-row gap-3 items-center text-lg md:text-2xl font-bold">
-                    <PhFileText :size="24" color="#258CF4" />About Game
-                </p>
-                <p class="md:text-md lg:text-lg text-[#CBD5E1] text-justify">{{ game.summary }}</p>
-                <div class="bg-[#1A2632] h-38 w-full p-2 md:p-6 flex flex-col gap-6 rounded-lg border-2 border-[#223649]">
-                    <p class="flex flex-row gap-3 items-center  font-bold text-lg md:text-2xl">
-                        <PhKeyboard :size="24" color="#258CF4" />How to Play
+        <div class="flex flex-col gap-8 transition-all duration-300"
+            :class="focus_mode ? 'blur-sm opacity-30 pointer-events-none select-none' : ''">
+            <div class="grid grid-cols-1 lg:grid-cols-[3fr_1fr] gap-y-3 lg:gap-x-8">
+                <div class="flex flex-col gap-4 lg:gap-10">
+                    <p class="flex flex-row gap-3 items-center text-lg md:text-2xl font-bold">
+                        <PhFileText :size="24" color="#258CF4" />About Game
                     </p>
-                    <div class="grid grid-cols-2 md:grid-cols-3 gap-y-3 w-full gap-x-2 md:gap-x-6">
-                        <div class="flex flex-col justify-center p-2 md:p-4 items-center bg-[#223649] rounded-xl "
-                            v-for="(movement) in game.movement">
-                            <p class="text-xs md:text-sm font-bold text-[#94A3B8]">{{ movement.type }}</p>
-                            <p class="text-xs md:text-sm lg:text-xl font-bold">{{ movement.keys }}</p>
+                    <p class="md:text-md lg:text-lg text-[#CBD5E1] text-justify">{{ game.summary }}</p>
+                    <div class="bg-[#1A2632] h-38 w-full p-2 md:p-6 flex flex-col gap-6 rounded-lg border-2 border-[#223649]">
+                        <p class="flex flex-row gap-3 items-center  font-bold text-lg md:text-2xl">
+                            <PhKeyboard :size="24" color="#258CF4" />How to Play
+                        </p>
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-y-3 w-full gap-x-2 md:gap-x-6">
+                            <div class="flex flex-col justify-center p-2 md:p-4 items-center bg-[#223649] rounded-xl "
+                                v-for="(movement) in game.movement">
+                                <p class="text-xs md:text-sm font-bold text-[#94A3B8]">{{ movement.type }}</p>
+                                <p class="text-xs md:text-sm lg:text-xl font-bold">{{ movement.keys }}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="flex flex-col gap-6">
-                <div
-                    class="bg-gradient-to-r from-[#F59E0B]/10 to-[#F97316]/5 p-4 flex flex-col border-2 border-[#F59E0B]/20 rounded-lg flex flex-col gap-4">
-                    <p class="flex flex-row gap-3 text-lg font-bold items-center">
-                        <PhLightbulb :size="18" color="#F59E0B" />Did you know?
-                    </p>
-                    <p class="text-sm text-[#94A3B8] text-justify">"{{ game.trivia }}"</p>
+                <div class="flex flex-col gap-6">
+                    <div
+                        class="bg-gradient-to-r from-[#F59E0B]/10 to-[#F97316]/5 p-4 flex flex-col border-2 border-[#F59E0B]/20 rounded-lg flex flex-col gap-4">
+                        <p class="flex flex-row gap-3 text-lg font-bold items-center">
+                            <PhLightbulb :size="18" color="#F59E0B" />Did you know?
+                        </p>
+                        <p class="text-sm text-[#94A3B8] text-justify">"{{ game.trivia }}"</p>
+                    </div>
+                    <div class="bg-[#1A2632] flex flex-col  p-6 rounded-lg border-2 border-[#223649] gap-4 h-min">
+                        <p class="text-sm font-bold text-[#64748B] tracking-widest">GAME INFO</p>
+                        <div class="flex flex-row justify-between border-b-[0.063rem] border-[#223649] pb-2">
+                            <p class="text-md text-[#94A3B8]">Developer</p>
+                            <p class="font-medium text-md">{{ game.developer }}</p>
+                        </div>
+                        <div class="flex flex-row justify-between border-b-[0.063rem] border-[#223649] pb-2">
+                            <p class="text-md text-[#94A3B8]">Release Date</p>
+                            <p class="font-medium text-md">{{ game.year }}</p>
+                        </div>
+                        <div class="flex flex-row justify-between border-b-[0.063rem] border-[#223649] pb-2">
+                            <p class="text-md text-[#94A3B8]">Genre</p>
+                            <p class="font-medium text-md">{{ game.genre[0] }}</p>
+                        </div>
+
+                    </div>
+
                 </div>
-                <div class="bg-[#1A2632] flex flex-col  p-6 rounded-lg border-2 border-[#223649] gap-4 h-min">
-                    <p class="text-sm font-bold text-[#64748B] tracking-widest">GAME INFO</p>
-                    <div class="flex flex-row justify-between border-b-[0.063rem] border-[#223649] pb-2">
-                        <p class="text-md text-[#94A3B8]">Developer</p>
-                        <p class="font-medium text-md">{{ game.developer }}</p>
-                    </div>
-                    <div class="flex flex-row justify-between border-b-[0.063rem] border-[#223649] pb-2">
-                        <p class="text-md text-[#94A3B8]">Release Date</p>
-                        <p class="font-medium text-md">{{ game.year }}</p>
-                    </div>
-                    <div class="flex flex-row justify-between border-b-[0.063rem] border-[#223649] pb-2">
-                        <p class="text-md text-[#94A3B8]">Genre</p>
-                        <p class="font-medium text-md">{{ game.genre[0] }}</p>
-                    </div>
-
+            </div>
+            <div class="flex flex-row justify-between w-full items-center">
+                <p class="flex flex-row items-center gap-2 text-2xl font-bold">
+                    <PhSparkle :size="24" color="#258CF4" />Related Games
+                </p>
+                <div>
+                    <button class="p-2 border-white/30 border-[0.063rem] rounded-xl mr-4"
+                        @click="swiperInstance?.slidePrev()">
+                        <PhCaretLeft :size="16" weight="bold" />
+                    </button>
+                    <button class="p-2 border-white/30 border-[0.063rem] rounded-xl" @click="swiperInstance?.slideNext()">
+                        <PhCaretRight :size="16" weight="bold" />
+                    </button>
                 </div>
 
             </div>
-        </div>
-        <div class="flex flex-row justify-between w-full items-center">
-            <p class="flex flex-row items-center gap-2 text-2xl font-bold">
-                <PhSparkle :size="24" color="#258CF4" />Related Games
-            </p>
-            <div>
-                <button class="p-2 border-white/30 border-[0.063rem] rounded-xl mr-4"
-                    @click="swiperInstance?.slidePrev()">
-                    <PhCaretLeft :size="16" weight="bold" />
-                </button>
-                <button class="p-2 border-white/30 border-[0.063rem] rounded-xl" @click="swiperInstance?.slideNext()">
-                    <PhCaretRight :size="16" weight="bold" />
-                </button>
+            <div class="w-dvh  ">
+
+                <Swiper :space-between="20" :loop="true" @swiper="onSwiper" :breakpoints="{
+                    0: {
+                        slidesPerView: 2
+                    },
+                    768: {
+                        slidesPerView: 5
+                    }
+                }">
+                    <SwiperSlide v-for="slide in related_games" :key="slide.id">
+                        <div @click="$router.push(`/games/${slide._id}`)"
+                            class="flex cursor-pointer flex-col items-center gap-4 pb-10">
+
+                            <img :src="usePublicUrl(slide.cover_url)" :alt="slide.title" class="w-full rounded-2xl object-cover h-auto md:h-72" />
+                        </div>
+                    </SwiperSlide>
+                </Swiper>
             </div>
-
-        </div>
-        <div class="w-dvh  ">
-
-            <Swiper :space-between="20" :loop="true" @swiper="onSwiper" :breakpoints="{
-                0: {
-                    slidesPerView: 2
-                },
-                768: {
-                    slidesPerView: 5
-                }
-            }">
-                <SwiperSlide v-for="slide in related_games" :key="slide.id">
-                    <div @click="$router.push(`/games/${slide._id}`)"
-                        class="flex cursor-pointer flex-col items-center gap-4 pb-10">
-
-                        <img :src="usePublicUrl(slide.cover_url)" :alt="slide.title" class="w-full rounded-2xl object-cover h-auto md:h-72" />
-                    </div>
-                </SwiperSlide>
-            </Swiper>
         </div>
     </div>
 </template>
 <script setup>
-import { PhPlay, PhFileText, PhKeyboard, PhLightbulb, PhSparkle, PhPlayCircle, PhShareNetwork, PhCaretLeft, PhCaretRight } from '@phosphor-icons/vue';
+import { PhPlay, PhFileText, PhKeyboard, PhLightbulb, PhLightbulbFilament, PhSparkle, PhPlayCircle, PhShareNetwork, PhCaretLeft, PhCaretRight } from '@phosphor-icons/vue';
 import { games } from "/assets/data/games.json";
 const show_game_window = ref(false)
+const focus_mode = ref(false)
 const route = useRoute()
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'

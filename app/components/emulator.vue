@@ -35,6 +35,9 @@ const iframeContent = computed(() => `
         EJS_pathtodata = 'https://cdn.emulatorjs.org/stable/data/';
         EJS_startOnLoaded = true;
         EJS_volume     = 0.7;
+        document.getElementById('emulator-container').addEventListener('dblclick', () => {
+            if (window.EJS_emulator) window.EJS_emulator.toggleFullscreen(true);
+        });
     <\/script>
     <script src="https://cdn.emulatorjs.org/stable/data/loader.js"><\/script>
 </body>

@@ -58,17 +58,6 @@
                         browser</p>
                 </div>
                 <div class="flex flex-row gap-4 justify-self-end">
-                    <div class="relative w-full">
-                        <span class="absolute inset-y-0 left-3 flex items-center text-gray-400">
-                            <PhMagnifyingGlass :size="18" />
-                        </span>
-
-                        <input type="text" placeholder="Search..." :value="filterState.search_text"
-                            @input="(ev) => { skip = 0; filterState.search_text = ev.target.value }"
-                            class="w-dwh lg:w-[30rem] rounded-lg  bg-[#1E293B] text-white  py-2 pl-9 pr-4 text-sm text-gray-900 outline-none transition focus:border-[#258CF4] focus:ring-2 focus:ring-[#258CF4]/30 placeholder:text-gray-400" />
-                    </div>
-
-                    </input>
                     <button class="p-2 border-white/10 border-2 rounded-xl block lg:hidden"
                         @click="filter_visible = true">
                         <PhFunnelSimple :size="20" weight="bold" color="#FFFFFF" />
@@ -169,7 +158,7 @@
 import Paginator from 'primevue/paginator';
 import { platforms } from "/assets/data/platforms.json";
 import { games } from "/assets/data/games.json";
-import { PhGridFour, PhMagnifyingGlass, PhFunnelSimple } from '@phosphor-icons/vue';
+import { PhGridFour, PhFunnelSimple } from '@phosphor-icons/vue';
 import { usePublicUrl } from '~/composables/usePublicUrl';
 import { usePlatformShortName } from '~/composables/usePlatformShortName';
 import { filter } from '@primeuix/themes/aura/datatable';
@@ -184,6 +173,12 @@ const filterState = ref({
     selected_platform: '',
     sort_by: ''
 })
+
+const route = useRoute()
+watch(() => route.query.search, (value) => {
+    filterState.value.search_text = typeof value === 'string' ? value : ''
+    skip.value = 0
+}, { immediate: true })
 
 const computed_games_list = computed(() => {
     let games_list = [...games].sort((a, b) => a.name.localeCompare(b.name));

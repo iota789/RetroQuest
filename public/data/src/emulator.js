@@ -4819,7 +4819,8 @@ class EmulatorJS {
                     shaderMenu[shaderName] = shaderName;
                 }
             }
-            addToMenu(this.localization("Shaders"), "shader", shaderMenu, "disabled", graphicsOptions, true);
+            const defaultShader = shaderMenu["crt-aperture.glslp"] ? "crt-aperture.glslp" : "disabled";
+            addToMenu(this.localization("Shaders"), "shader", shaderMenu, defaultShader, graphicsOptions, true);
         }
 
         if (this.supportsWebgl2 && !this.requiresWebGL2(this.getCore())) {

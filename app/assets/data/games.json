@@ -2294,6 +2294,37 @@
                     "keys": "Shift"
                 }
             ]
+        },
+        {
+            "_id": "3520c149-054e-4005-9e0a-6f4f6bf5e18d",
+            "name": "lode runner",
+            "cover_url": "/images/game_covers/lode_runner.jpeg",
+            "platform": "nes",
+            "platform_name": "Nintendo Entertainment System",
+            "year": 1999,
+            "date_of_release": "September 18, 1999",
+            "developer": "asdas",
+            "genre": [
+                "asdsa"
+            ],
+            "summary": "sadsad",
+            "additional_summary": "asdasd",
+            "trivia": "sadasasdsad",
+            "path": "/roms/nes/Lode_Runner__USA__1_.nes",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Jump",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                }
+            ]
         }
     ]
 }

@@ -1,53 +1,5 @@
 <template>
-    <div class="grid grid-cols-1 lg:grid-cols-[0.5fr_3fr] gap-x-4 my-8 mx-3 lg:mx-12">
-        <div class="lg:flex hidden flex-col gap-4 ">
-            <div class="flex flex-col gap-4">
-                <div class="flex flex-row justify-between">
-
-                    <p class="text-sm font-bold text-[#94A3B8] tracking-wider">PLATFORMS</p>
-                    <button class="text-sm font-bold text-[#94A3B8]" v-if="filterState.selected_platform !== ''"
-                        @click="filterState.selected_platform = ''">Reset</button>
-                </div>
-                <div class="flex flex-row gap-2 items-center cursor-pointer p-2 rounded-2xl"
-                    @click="filterState.selected_platform = ''" :class="{
-                        'bg-[#258CF4]/10 text-[#258CF4]': filterState.selected_platform === '',
-                        'bg-transparent text-white': filterState.selected_platform !== '',
-                    }">
-
-                    <p>All Platforms</p>
-                </div>
-                <div class="flex flex-row gap-2 items-center cursor-pointer p-2 rounded-2xl"
-                    v-for="platform in platforms" @click="() => {
-                        skip = 0
-                        filterState.selected_platform = platform.value
-                    }" :class="{
-                        'bg-[#258CF4]/10 text-[#258CF4]': filterState.selected_platform === platform.value,
-                        'bg-transparent text-white': filterState.selected_platform !== platform.value,
-                    }">
-
-                    {{ platform.name }}
-                </div>
-                <div class="flex flex-col gap-4">
-                    <div class="flex flex-row justify-between">
-                        <p class="text-sm font-bold text-[#94A3B8] tracking-wider">GENRES</p>
-                        <button class="text-sm font-bold text-[#94A3B8]" v-if="filterState.selected_genre !== ''"
-                            @click="() => {
-                                skip = 0;
-                                filterState.selected_genre = ''
-                            }
-                            ">Reset</button>
-                    </div>
-
-                    <div class="flex flex-row gap-2 items-center p-2 cursor-pointer rounded-2xl"
-                        v-for="genre in computed_genres" :class="{
-                            'bg-[#258CF4]/10 text-[#258CF4]': filterState.selected_genre === genre,
-                            'bg-transparent text-white': filterState.selected_genre !== genre,
-                        }" @click="() => { skip = 0; filterState.selected_genre = genre }">
-                        <p>{{ genre }}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="grid grid-cols-1 my-8 mx-3 lg:mx-12">
         <div class="flex flex-col gap-2">
 
             <div class="grid grid-cols-1 md:grid-cols-2 justify-between gap-y-6 items-center">
@@ -58,7 +10,7 @@
                         browser</p>
                 </div>
                 <div class="flex flex-row gap-4 justify-self-end">
-                    <button class="p-2 border-white/10 border-2 rounded-xl block lg:hidden"
+                    <button class="p-2 border-white/10 border-2 rounded-xl block"
                         @click="filter_visible = true">
                         <PhFunnelSimple :size="20" weight="bold" color="#FFFFFF" />
                     </button>
@@ -70,26 +22,31 @@
             </div>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-8 gap-x-4 gap-y-4"
                 v-if="computed_games_list.length > 0">
-                <div class="flex flex-col cursor-pointer" v-for="(game) in computed_games_list" @click="() => {
-                    $router.push(`/games/${game._id}`)
-                }">
-                    <div class="relative">
+                <div class="group flex flex-col cursor-pointer overflow-hidden rounded-2xl bg-[#0F172A] border border-white/5 transition-all duration-300 hover:-translate-y-1 hover:border-[#258CF4]/40 hover:shadow-xl hover:shadow-[#258CF4]/10"
+                    v-for="(game) in computed_games_list" @click="() => {
+                        $router.push(`/games/${game._id}`)
+                    }">
+                    <div class="relative overflow-hidden">
+                        <img :src="usePublicUrl(game.cover_url)" :alt="game.name"
+                            class="w-full aspect-square object-cover transition-transform duration-500 group-hover:scale-105">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-transparent to-transparent opacity-80">
+                        </div>
                         <div :class="{
-                            'bg-orange-500': game.platform_name === 'Game Boy',
-                            'bg-red-500': game.platform_name == 'Nintendo Entertainment System',
-                            'bg-green-500': game.platform_name == 'Game Boy Advance',
-                            'bg-blue-500': game.platform_name == 'Sega Genesis'
+                            'bg-orange-500/80': game.platform_name === 'Game Boy',
+                            'bg-red-500/80': game.platform_name == 'Nintendo Entertainment System',
+                            'bg-green-500/80': game.platform_name == 'Game Boy Advance',
+                            'bg-blue-500/80': game.platform_name == 'Sega Genesis'
                         }"
-                            class="absolute top-3 left-3 backdrop-blur-sm text-white text-[10px] py-1 rounded font-bold px-2">
+                            class="absolute top-3 left-3 backdrop-blur-md text-white text-[10px] tracking-wider py-1 rounded-full font-bold px-3 border border-white/20">
                             {{ usePlatformShortName(game.platform) }}
                         </div>
-                        <img :src="usePublicUrl(game.cover_url)" alt="" class="rounded-xl h-[256px] aspect-square">
                     </div>
-                    <div class="mt-2">
-
-                        <p class=" text-sm md:text-lg font-bold">{{ game.name }}</p>
-                        <p class="text-[#64748B] text-sm font-normal">{{ game?.genre[0] }} • {{ game?.genre[1] }} • {{
-                            game.year }}
+                    <div class="p-4 flex flex-col gap-1">
+                        <p class="text-sm md:text-base font-semibold text-white truncate transition-colors group-hover:text-[#258CF4]">
+                            {{ game.name }}</p>
+                        <p class="text-[#94A3B8] text-xs font-normal tracking-wide truncate">{{ game?.genre[0] }} • {{
+                            game?.genre[1] }} • {{ game.year }}
                         </p>
                     </div>
                 </div>

@@ -7,6 +7,7 @@ const PLATFORM_NAMES: Record<string, string> = {
     gba: 'Game Boy Advance',
     segaMD: 'Sega Genesis',
     snes: 'Super Nintendo Entertainment System',
+    n64: 'Nintendo 64',
 }
 
 const GAMES_JSON_PATH = path.resolve(process.cwd(), 'app/assets/data/games.json')

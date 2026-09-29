@@ -2325,6 +2325,162 @@
                     "keys": "Enter"
                 }
             ]
+        },
+        {
+            "_id": "ff3a3b19-a329-486c-9ab4-91fec4326d4a",
+            "name": "Metroid Fusion",
+            "cover_url": "/images/game_covers/metroid_fusion.jpeg",
+            "platform": "gba",
+            "platform_name": "Game Boy Advance",
+            "year": 2002,
+            "date_of_release": "November 17, 2002",
+            "developer": "Nintendo R&D1",
+            "genre": [
+                "Action",
+                "Metroidvania"
+            ],
+            "summary": "Bounty hunter Samus Aran returns in a direct narrative sequel to Super Metroid, this time infected by a parasitic organism called the X Parasite during a research mission on planet SR388. Fitted with a new Fusion Suit derived from the very parasite that nearly killed her, Samus must explore the sprawling Biologic Space Laboratories station, following mission directives from the station's AI while being hunted by a mysterious, more powerful doppelganger of herself known as SA-X. The game leans into a tighter, more linear and atmospheric structure than prior entries, emphasizing tension and story over open-ended exploration.",
+            "additional_summary": "Metroid Fusion pioneered a scripted, mission-based structure for the series and introduced the SA-X, an enemy that mimics Samus's own abilities and stalks her throughout the station, creating some of the tensest sequences in the franchise.",
+            "trivia": "Metroid Fusion was the direct inspiration for Metroid Dread, released nearly two decades later, which reintroduced the SA-X concept through the EMMI robots. The game's plot and the Fusion Suit's design were later tied into the ending of Metroid Dread, linking the two games together.",
+            "path": "/roms/gba/metroid_fusion.gba",
+            "movement": [
+                {
+                    "type": "Move Left / Right",
+                    "keys": "Arrow Left / Right"
+                },
+                {
+                    "type": "Aim Up",
+                    "keys": "Arrow Up"
+                },
+                {
+                    "type": "Morph Ball / Crouch",
+                    "keys": "Arrow Down"
+                },
+                {
+                    "type": "Jump",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Fire / Beam",
+                    "keys": "X"
+                },
+                {
+                    "type": "Missile / Aim Diagonally",
+                    "keys": "A"
+                },
+                {
+                    "type": "Lock Aim / Scroll Screen",
+                    "keys": "S"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select Weapon",
+                    "keys": "Shift"
+                }
+            ]
+        },
+        {
+            "_id": "f91aba07-662e-42a2-a7a8-e8a7de55c54a",
+            "name": "The Legend of Zelda: Ocarina of Time",
+            "cover_url": "/images/game_covers/ocarina_of_time.jpg",
+            "platform": "n64",
+            "platform_name": "Nintendo 64",
+            "year": 1998,
+            "date_of_release": "November 21, 1998",
+            "developer": "Nintendo EAD",
+            "genre": [
+                "Action-Adventure",
+                "Puzzle"
+            ],
+            "summary": "Link, a young boy raised in Kokiri Forest, is drawn into an epic quest to stop the dark warlord Ganondorf from seizing the sacred Triforce and plunging Hyrule into ruin. Armed with the titular Ocarina, Link travels between his childhood and a bleak future seven years later, awakening ancient sages, solving elaborate dungeon puzzles, and mastering musical songs that warp time and space. As the first fully 3D entry in the series, it introduced the now-iconic Z-targeting lock-on combat system and set the template for 3D action-adventure games for decades to follow.",
+            "additional_summary": "Ocarina of Time is widely regarded as one of the most influential video games ever made, pioneering 3D camera and targeting conventions, context-sensitive controls, and dynamic day/night and time-travel mechanics that shaped the action-adventure genre.",
+            "trivia": "Ocarina of Time holds the Guinness World Record for highest review score aggregate of all time. Its Z-targeting lock-on system, invented for this game, became a standard feature in nearly every 3D action game that followed. The game was originally built around a wholly new engine created just to realize real-time 3D exploration on the N64's hardware.",
+            "path": "/roms/n64/legend_of_zelda_ocarina_of_time.z64",
+            "movement": [
+                {
+                    "type": "Move / Camera (Analog Stick)",
+                    "keys": "Arrow Keys"
+                },
+                {
+                    "type": "A Button — Action / Jump",
+                    "keys": "X"
+                },
+                {
+                    "type": "B Button — Attack / Cancel",
+                    "keys": "C"
+                },
+                {
+                    "type": "Z Target / Crouch",
+                    "keys": "Space"
+                },
+                {
+                    "type": "L Button — Adjust Camera",
+                    "keys": "A"
+                },
+                {
+                    "type": "R Button — First-Person View",
+                    "keys": "S"
+                },
+                {
+                    "type": "C-Buttons — Camera / Items",
+                    "keys": "Numpad 8 / 2 / 4 / 6"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                }
+            ]
+        },
+        {
+            "_id": "9cd2921d-6c3a-4387-8876-05d58ae15c19",
+            "name": "The Legend of Zelda: A Link to the Past",
+            "cover_url": "/images/game_covers/link_to_the_past.jpeg",
+            "platform": "snes",
+            "platform_name": "Super Nintendo Entertainment System",
+            "year": 1991,
+            "date_of_release": "November 21, 1991",
+            "developer": "Nintendo EAD",
+            "genre": [
+                "Action-Adventure",
+                "Puzzle"
+            ],
+            "summary": "Link is awoken by a telepathic call from Princess Zelda, imprisoned deep within Hyrule Castle's dungeons by the wizard Agahnim, who plots to breach the seal on the parallel Dark World and resurrect the demon king Ganon. Setting out across two mirrored realms — the Light World and the corrupted Dark World — Link collects three sacred pendants and the Master Sword, then delves into elaborate multi-room dungeons filled with pushable blocks, elemental rods, and boss guardians. The top-down, 16-bit reinvention established the overworld structure, item-based dungeon design, and central mythology that would define the series for years to come.",
+            "additional_summary": "A Link to the Past redefined the series after the divergent Zelda II, cementing the top-down action-adventure format, the Light World / Dark World duality, and dungeon items like the Hookshot and Master Sword as franchise staples.",
+            "trivia": "A Link to the Past was the first Zelda game to feature the Master Sword and the Dark World, both of which became recurring franchise fixtures. It was also the last mainline Zelda game for nearly two decades to use a top-down perspective before A Link Between Worlds revived it on the 3DS in 2013.",
+            "path": "/roms/snes/legend_of_zelda_a_link_to_the_past.sfc",
+            "movement": [
+                {
+                    "type": "Move Left / Right / Up / Down",
+                    "keys": "Arrow Keys"
+                },
+                {
+                    "type": "Sword Attack / Confirm",
+                    "keys": "Z"
+                },
+                {
+                    "type": "Use Item",
+                    "keys": "X"
+                },
+                {
+                    "type": "Dash (Pegasus Boots)",
+                    "keys": "A"
+                },
+                {
+                    "type": "Change Item",
+                    "keys": "S"
+                },
+                {
+                    "type": "Start / Pause",
+                    "keys": "Enter"
+                },
+                {
+                    "type": "Select — Item Menu",
+                    "keys": "Shift"
+                }
+            ]
         }
     ]
 }

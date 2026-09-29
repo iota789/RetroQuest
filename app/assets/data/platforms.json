@@ -33,5 +33,12 @@
         "value": "snes",
         "image_url":"",
         "banner_url":""
+    },
+    {
+        "_id":"6",
+        "name": "Nintendo 64",
+        "value": "n64",
+        "image_url":"",
+        "banner_url":""
     }
 ]}

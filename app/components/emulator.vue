@@ -8,18 +8,25 @@
                 <PhCornersOut :size="20" weight="bold" />
             </button>
         </div>
-        <div v-if="folderSupported || status" class="flex flex-row flex-wrap items-center gap-2 mt-3">
+        <div class="flex flex-row flex-wrap items-center gap-2 mt-3">
+            <button type="button" class="toolbar-btn" @click="quickLoad">
+                <PhLightning :size="18" weight="bold" />Quick Load
+            </button>
             <button v-if="folderSupported" type="button" class="toolbar-btn" @click="pickFolder">
                 <PhFolderOpen :size="18" weight="bold" />Save Folder
             </button>
             <span v-if="status" class="text-sm text-[#94A3B8] ml-1">{{ status }}</span>
         </div>
+        <p v-if="!folderSupported" class="text-xs text-[#64748B] mt-2">
+            Folder saves aren't available in this browser, so saves stay in browser storage.
+            In Brave, enable brave://flags/#file-system-access-api and relaunch.
+        </p>
     </div>
 </template>
 
 <script setup>
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
-import { PhCornersOut, PhFolderOpen } from '@phosphor-icons/vue'
+import { PhCornersOut, PhFolderOpen, PhLightning } from '@phosphor-icons/vue'
 import { useSaveStates } from '~/composables/useSaveStates'
 
 const props = defineProps({
@@ -57,12 +64,27 @@ const pickFolder = async () => {
     }
 }
 
+const quickLoad = async () => {
+    try {
+        const state = await saves.loadLatest(game())
+        if (!state) return say('No saved state for this game yet')
+        const emu = iframeEl.value?.contentWindow?.EJS_emulator
+        if (!emu?.gameManager) return say('Emulator is still loading')
+        emu.gameManager.loadState(state)
+        say('Loaded latest saved state')
+    } catch (e) {
+        console.error('[saves] quick load failed', e)
+        say('Failed to load saved state')
+    }
+}
+
 const onMessage = async (ev) => {
     if (ev.source !== iframeEl.value?.contentWindow || ev.data?.type !== 'rq-save-state') return
     try {
         const result = await saves.save(game(), ev.data.state)
-        say(result.where === 'folder' ? `Saved to ${result.name}` : 'Saved in this browser')
+        say(result.where === 'folder' ? `Saved to ${result.name}` : 'Saved in this browser (no folder access)')
     } catch (e) {
+        console.error('[saves] save failed', e)
         say('Failed to save state')
     }
 }

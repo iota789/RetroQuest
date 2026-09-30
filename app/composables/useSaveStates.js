@@ -52,20 +52,65 @@ export const useSaveStates = () => {
 
     const gameDir = async (root, game) => root.getDirectoryHandle(slugify(game.name), { create: true })
 
+    const saveToFolder = async (root, game, state) => {
+        const dir = await gameDir(root, game)
+        const name = `${slugify(game.name)}-${new Date().toISOString().replace(/[:.]/g, '-')}.state`
+        const writable = await (await dir.getFileHandle(name, { create: true })).createWritable()
+        await writable.write(state)
+        await writable.close()
+        return `${dir.name}/${name}`
+    }
+
+    // Saves into <chosen folder>/<game>/ (created on first save, reused afterwards).
+    // Falls back to browser storage when no folder can be used.
     const save = async (game, state) => {
-        const stamp = new Date().toISOString().replace(/[:.]/g, '-')
-        const root = await getRootHandle(true).catch(() => null)
-        if (root) {
-            const dir = await gameDir(root, game)
-            const name = `${slugify(game.name)}-${stamp}.state`
-            const writable = await (await dir.getFileHandle(name, { create: true })).createWritable()
-            await writable.write(state)
-            await writable.close()
-            return { where: 'folder', name: `${dir.name}/${name}` }
+        if (folderSupported()) {
+            try {
+                // No folder chosen yet: ask for one now (works while the save click is still fresh).
+                const root = (await getRootHandle(true)) || (await chooseFolder())
+                return { where: 'folder', name: await saveToFolder(root, game, state) }
+            } catch (e) {
+                console.warn('[saves] folder save failed, using browser storage', e)
+            }
         }
         await tx(STATE_STORE, 'readwrite', s => s.add({ gameId: game.id, savedAt: Date.now(), data: state }))
         return { where: 'browser', name: game.name }
     }
 
-    return { folderSupported, getRootHandle, chooseFolder, save }
+    const latestFromFolder = async (game) => {
+        const root = await getRootHandle(true).catch(() => null)
+        if (!root) return null
+        let dir
+        try {
+            dir = await root.getDirectoryHandle(slugify(game.name))
+        } catch (e) {
+            return null
+        }
+        let latest = null
+        for await (const entry of dir.values()) {
+            if (entry.kind !== 'file' || !entry.name.endsWith('.state')) continue
+            const file = await entry.getFile()
+            if (!latest || file.lastModified > latest.lastModified) latest = file
+        }
+        return latest && { savedAt: latest.lastModified, read: async () => new Uint8Array(await latest.arrayBuffer()) }
+    }
+
+    const latestFromBrowser = async (game) => {
+        const rows = await tx(STATE_STORE, 'readonly', s => s.index('gameId').getAll(game.id))
+        if (!rows.length) return null
+        const row = rows.reduce((a, b) => (b.savedAt > a.savedAt ? b : a))
+        return { savedAt: row.savedAt, read: async () => row.data }
+    }
+
+    // Newest saved state for this game across both storage locations, or null.
+    const loadLatest = async (game) => {
+        const candidates = (await Promise.all([
+            latestFromFolder(game).catch(() => null),
+            latestFromBrowser(game).catch(() => null)
+        ])).filter(Boolean)
+        if (!candidates.length) return null
+        return candidates.reduce((a, b) => (b.savedAt > a.savedAt ? b : a)).read()
+    }
+
+    return { folderSupported, getRootHandle, chooseFolder, save, loadLatest }
 }

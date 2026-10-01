@@ -71,7 +71,7 @@
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
             <div v-for="f in features" :key="f.title"
-                class="group flex flex-col gap-4 p-8 rounded-2xl bg-[#0F172A] border border-white/5 transition-all duration-300 hover:-translate-y-1 hover:border-white/20">
+                class="group flex flex-col items-center text-center gap-4 p-8 rounded-2xl bg-[#0F172A] border border-white/5 transition-all duration-300 hover:-translate-y-1 hover:border-white/20">
                 <div class="w-14 h-14 flex items-center justify-center rounded-xl border"
                     :style="{ backgroundColor: f.color + '1A', borderColor: f.color + '33' }">
                     <component :is="f.icon" :size="26" :color="f.color" />

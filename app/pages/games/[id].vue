@@ -48,7 +48,14 @@
                     <p class="flex flex-row gap-3 items-center text-lg md:text-2xl font-bold">
                         <PhFileText :size="24" color="#258CF4" />About Game
                     </p>
-                    <p class="md:text-md lg:text-lg text-[#CBD5E1] leading-relaxed ">{{ game.summary }}</p>
+                    <div class="flex flex-col gap-2 items-start">
+                        <p class="md:text-md lg:text-lg text-[#CBD5E1] leading-relaxed"
+                            :class="{ 'line-clamp-2': !summary_expanded }">{{ game.summary }}</p>
+                        <button type="button" class="text-[#258CF4] font-semibold hover:underline cursor-pointer"
+                            @click="summary_expanded = !summary_expanded">
+                            {{ summary_expanded ? 'Show less' : 'Show more' }}
+                        </button>
+                    </div>
                     <div class="bg-[#0F172A] w-full p-4 md:p-6 flex flex-col gap-6 rounded-2xl border border-white/10">
                         <p class="flex flex-row gap-3 items-center  font-bold text-lg md:text-2xl">
                             <PhKeyboard :size="24" color="#258CF4" />How to Play
@@ -86,6 +93,15 @@
                         </div>
 
                     </div>
+                    <a v-if="game.map_url" :href="usePublicUrl(game.map_url)" target="_blank" rel="noopener"
+                        class="group bg-[#0F172A] flex flex-col p-4 rounded-2xl border border-white/10 gap-3 h-min transition-colors hover:border-[#258CF4]/40">
+                        <p class="flex flex-row gap-2 items-center text-sm font-bold text-[#64748B] tracking-widest">
+                            <PhMapTrifold :size="16" color="#258CF4" />MAP
+                        </p>
+                        <img :src="usePublicUrl(game.map_url)" :alt="`${game.name} map`"
+                            class="w-full max-h-48 object-cover object-top rounded-xl border border-white/10 transition-transform duration-300 group-hover:scale-[1.02]" />
+                        <p class="text-xs text-[#94A3B8]">Click to view full size</p>
+                    </a>
 
                 </div>
             </div>
@@ -129,9 +145,10 @@
     </div>
 </template>
 <script setup>
-import { PhPlay, PhFileText, PhKeyboard, PhLightbulb, PhSparkle, PhPlayCircle, PhShareNetwork, PhCaretLeft, PhCaretRight } from '@phosphor-icons/vue';
+import { PhPlay, PhFileText, PhKeyboard, PhLightbulb, PhSparkle, PhPlayCircle, PhShareNetwork, PhCaretLeft, PhCaretRight, PhMapTrifold } from '@phosphor-icons/vue';
 import { games } from "/assets/data/games.json";
 const show_game_window = ref(false)
+const summary_expanded = ref(false)
 const route = useRoute()
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'

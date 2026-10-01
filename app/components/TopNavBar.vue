@@ -20,6 +20,11 @@
                     'text-[#258CF4] underline': $route.path == '/games'
                 }"
                 >Library</NuxtLink>
+                <NuxtLink to="/favourites" class="font-medium text-md md:text-lg"
+                :class="{
+                    'text-[#258CF4] underline': $route.path == '/favourites'
+                }"
+                >Favourites</NuxtLink>
             </div>
         </div>
 
